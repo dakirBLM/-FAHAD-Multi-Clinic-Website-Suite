@@ -1,0 +1,1634 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>مركز أركادا للعلاج الطبيعي والتأهيل الحركي والعصبي | مركز فهد القرني</title>
+    <meta name="description" content="مركز أركادا للعلاج الطبيعي والتأهيل الحركي والعصبي في التشيك - علاج البالغين والأطفال، برامج تأهيلية متخصصة، أحدث التقنيات الطبية">
+    <meta name="keywords" content="مركز أركادا, العلاج الطبيعي التشيك, التأهيل العصبي, التأهيل الحركي, علاج الشلل, مركز فهد القرني">
+    <meta name="author" content="مركز فهد القرني">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="مركز أركادا للعلاج الطبيعي | مركز فهد القرني">
+    <meta property="og:description" content="مركز دولي متخصص في العلاج الطبيعي والتأهيل الحركي والعصبي في جمهورية التشيك">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://fahadcz.com/Innowalk_2024_18_Web.webp">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="1000038899.png">
+    <link rel="apple-touch-icon" href="1000038899.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://fahadcz.com/clinic-arcada.html">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalClinic",
+      "name": "مركز أركادا للعلاج الطبيعي والتأهيل",
+      "description": "مركز متخصص في العلاج الطبيعي والتأهيل الحركي والعصبي في التشيك",
+      "url": "https://fahadcz.com/clinic-arcada.html",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CZ",
+        "addressLocality": "Czech Republic"
+      },
+      "medicalSpecialty": ["Physical Therapy", "Neurological Rehabilitation", "Pediatric Rehabilitation"],
+      "openingHours": "24/7"
+    }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1E88C7;
+            --primary-dark: #0D6CA3;
+            --primary-light: #E8F4FD;
+            --secondary: #17a71e;
+            --secondary-light: #F0F9F0;
+            --accent: #00ddff;
+            --accent-light: #FFF8E6;
+            --dark: #1A1A1A;
+            --dark-gray: #424242;
+            --gray: #757575;
+            --light-gray: #F5F5F5;
+            --light: #FFFFFF;
+            --border: rgba(0, 0, 0, 0.08);
+            --shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            --shadow-hover: 0 15px 40px rgba(0, 0, 0, 0.12);
+            --glass-bg: rgba(255, 255, 255, 0.95);
+            --glass-border: rgba(255, 255, 255, 0.2);
+            --neuro-blue: #4A6FA5;
+            --neuro-light: #E3F2FD;
+            --rehab-green: #2E7D32;
+            --rehab-light: #E8F5E9;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            line-height: 1.8;
+            color: var(--dark);
+            background: var(--light);
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Header Styles */
+        header {
+            position: fixed;
+            top: 0.75rem;
+            left: 0.75rem;
+            right: 0.75rem;
+            z-index: 1000;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 0.5rem 1rem;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            transform: translateY(0);
+            min-height: 70px;
+            display: flex;
+            align-items: center;
+        }
+
+        header.hidden {
+            transform: translateY(-120%);
+        }
+
+        header.scrolled {
+            top: 0.5rem;
+            left: 0.5rem;
+            right: 0.5rem;
+            border-radius: 16px;
+            padding: 0.4rem 0.8rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 0;
+            position: relative;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            flex-shrink: 0;
+            z-index: 1001;
+        }
+
+        .logo-img {
+            height: 50px;
+            width: 50px;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+
+        .logo-text h1 {
+            font-size: 0.95rem;
+            color: var(--dark);
+            margin-bottom: 0;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+
+        .logo-text p {
+            color: var(--gray);
+            font-size: 0.75rem;
+            line-height: 1.2;
+        }
+
+        nav {
+            display: flex;
+            gap: 0.25rem;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 0.25rem;
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        nav a {
+            padding: 0.6rem 0.95rem;
+            color: var(--dark-gray);
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            position: relative;
+            overflow: hidden;
+            font-size: 0.875rem;
+            white-space: nowrap;
+        }
+
+        nav a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            border-radius: 25px;
+            z-index: -1;
+        }
+
+        nav a:hover, nav a.active {
+            color: white;
+        }
+
+        nav a.active {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            box-shadow: 0 6px 15px rgba(13,108,163,0.2);
+            position: relative;
+            z-index: 1;
+        }
+
+        nav a:hover {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            box-shadow: 0 6px 15px rgba(13,108,163,0.2);
+            position: relative;
+            z-index: 1;
+        }
+        nav a:hover::before, nav a.active::before {
+            opacity: 1;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-family: 'Cairo', sans-serif;
+            font-size: 0.875rem;
+            white-space: nowrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            box-shadow: 0 4px 15px rgba(30, 136, 199, 0.2);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(30, 137, 199, 0.639);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .btn-neuro {
+            background: linear-gradient(135deg, var(--neuro-blue), #6A9BD4);
+            color: white;
+            box-shadow: 0 4px 15px rgba(74, 111, 165, 0.3);
+        }
+
+        .btn-neuro:hover {
+            background: linear-gradient(135deg, #6A9BD4, var(--neuro-blue));
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(74, 111, 165, 0.5);
+        }
+
+        .menu-toggle {
+            display: none;
+            width: 44px;
+            height: 44px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            border: none;
+            border-radius: 14px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menu-toggle:hover {
+            transform: rotate(90deg);
+        }
+
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            left: 0;
+            background: var(--glass-bg);
+            backdrop-filter: blur(30px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            margin-top: 0.75rem;
+            padding: 1rem;
+            z-index: 1000;
+        }
+
+        .mobile-menu.active {
+            display: block;
+            animation: slideDown 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .mobile-menu a {
+            display: block;
+            padding: 1rem 1.25rem;
+            color: var(--dark);
+            text-decoration: none;
+            border-radius: 14px;
+            margin: 0.25rem 0;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .mobile-menu a:hover, .mobile-menu a.active {
+            background: var(--primary-light);
+            color: var(--primary);
+            transform: translateX(-5px);
+        }
+
+        @keyframes slideDown {
+            from { 
+                opacity: 0; 
+                transform: translateY(-10px); 
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
+            }
+        }
+
+        /* Clinic Hero Section with Medical Theme */
+        .clinic-hero {
+            position: relative;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            padding: 8rem 0 4rem;
+            overflow: hidden;
+            background: linear-gradient(to bottom,
+                        rgba(0, 0, 0, 0.5) 0%,
+                        rgba(0, 0, 0, 0.7) 100%),
+                        url('Innowalk_2024_18_Web.webp');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .medical-elements {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .medical-icon {
+            position: absolute;
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.3);
+            animation: floatMedical 20s linear infinite;
+        }
+
+        .medical-icon:nth-child(1) { top: 10%; right: 10%; animation-delay: 0s; }
+        .medical-icon:nth-child(2) { top: 20%; right: 30%; animation-delay: 4s; }
+        .medical-icon:nth-child(3) { top: 40%; right: 20%; animation-delay: 8s; }
+        .medical-icon:nth-child(4) { top: 60%; right: 40%; animation-delay: 12s; }
+        .medical-icon:nth-child(5) { top: 30%; right: 60%; animation-delay: 16s; }
+
+        @keyframes floatMedical {
+            0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.3; }
+            90% { opacity: 0.3; }
+            100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+        }
+
+        .clinic-hero-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+            max-width: 800px;
+        }
+
+        .clinic-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 0.5rem 1.25rem;
+            border-radius: 50px;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .clinic-hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: white;
+            font-weight: 800;
+        }
+
+        .clinic-hero h1 span {
+            background: linear-gradient(135deg, var(--neuro-light), var(--neuro-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .clinic-hero p {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        /* Introduction Section */
+        .intro-section {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, var(--light-gray) 0%, var(--light) 100%);
+        }
+
+        .intro-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .intro-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark);
+            font-weight: 800;
+        }
+
+        .intro-content p {
+            color: var(--dark-gray);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+            font-size: 1.125rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: var(--light);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow);
+            border: 2px solid transparent;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--primary-light);
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--primary-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover .feature-icon {
+            transform: scale(1.1) rotate(10deg);
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+        }
+
+        .feature-icon i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover .feature-icon i {
+            color: white;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        .feature-card p {
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        /* Services Section */
+        .services-section {
+            padding: 5rem 0;
+            background: var(--light);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .section-badge {
+            display: inline-block;
+            background: var(--primary-light);
+            color: var(--primary);
+            padding: 0.5rem 1.25rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-size: clamp(1.75rem, 4vw, 2.75rem);
+            margin-bottom: 1.25rem;
+            line-height: 1.2;
+            color: var(--dark);
+            font-weight: 800;
+        }
+
+        .section-title span {
+            background: linear-gradient(135deg, var(--neuro-blue), var(--primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-desc {
+            font-size: 1.125rem;
+            color: var(--dark-gray);
+            max-width: 48rem;
+            margin: 0 auto;
+            line-height: 1.8;
+            padding: 0 1rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: var(--light);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.4s ease;
+            border: 2px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--primary-light);
+        }
+
+        .service-header {
+            padding: 2rem;
+            background: linear-gradient(135deg, var(--neuro-blue), var(--primary));
+            color: white;
+            text-align: center;
+        }
+
+        .service-header i {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .service-header h3 {
+            font-size: 1.75rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .service-content {
+            padding: 2rem;
+        }
+
+        .service-content ul {
+            list-style: none;
+            margin: 1rem 0;
+        }
+
+        .service-content li {
+            padding: 0.75rem 0;
+            color: var(--dark-gray);
+            position: relative;
+            padding-right: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .service-content li:last-child {
+            border-bottom: none;
+        }
+
+        .service-content li::before {
+            content: '✓';
+            position: absolute;
+            right: 0;
+            color: var(--neuro-blue);
+            font-weight: bold;
+        }
+
+        .service-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--neuro-blue);
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .service-link:hover {
+            color: var(--primary-dark);
+            transform: translateX(-5px);
+        }
+
+        /* Advanced Cases Section */
+        .advanced-section {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, rgba(74, 111, 165, 0.05) 0%, var(--light) 100%);
+        }
+
+        .advanced-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .advanced-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--neuro-blue);
+            text-align: center;
+        }
+
+        .cases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .case-card {
+            background: white;
+            border-radius: 16px;
+            padding: 1.5rem;
+            border: 2px solid var(--neuro-light);
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow);
+        }
+
+        .case-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--neuro-blue);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .case-card h4 {
+            color: var(--neuro-blue);
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+            text-align: center;
+        }
+
+        .case-card ul {
+            list-style: none;
+        }
+
+        .case-card li {
+            padding: 0.5rem 0;
+            color: var(--dark-gray);
+            position: relative;
+            padding-right: 1.5rem;
+        }
+
+        .case-card li::before {
+            content: '•';
+            position: absolute;
+            right: 0;
+            color: var(--neuro-blue);
+            font-size: 1.5rem;
+        }
+
+        /* Technology Section */
+        .technology-section {
+            padding: 5rem 0;
+            background: var(--light-gray);
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .tech-card {
+            background: var(--light);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow);
+            border: 2px solid transparent;
+        }
+
+        .tech-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--primary-light);
+        }
+
+        .tech-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--neuro-blue), var(--primary));
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+        }
+
+        .tech-icon i {
+            font-size: 2rem;
+            color: white;
+        }
+
+        .tech-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        /* CTA Section */
+        .clinic-cta {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            text-align: center;
+        }
+
+        .clinic-cta .section-title {
+            color: white;
+        }
+
+        .clinic-cta .section-title span {
+            background: linear-gradient(135deg, var(--neuro-light), var(--neuro-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .cta-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin: 3rem 0;
+        }
+
+        .clinic-cta .btn-primary {
+            background: white;
+            color: var(--primary);
+        }
+
+        .clinic-cta .btn-neuro {
+            background: linear-gradient(135deg, var(--neuro-blue), #6A9BD4);
+        }
+
+        .contact-info-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 4rem;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .contact-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .contact-card i {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .contact-card h4 {
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9));
+            color: white;
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-logo-img {
+            height: 50px;
+            width: auto;
+            border-radius: 12px;
+        }
+
+        .footer-logo-text h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.25rem;
+            color: white;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1.25rem;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .footer-links h4 {
+            margin-bottom: 1.25rem;
+            font-size: 1.125rem;
+            color: white;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links a:hover {
+            color: white;
+            transform: translateX(-5px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 1.5rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.8125rem;
+        }
+
+        /* WhatsApp Float */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 1.5rem;
+            left: 1.5rem;
+            z-index: 999;
+        }
+
+        .whatsapp-btn {
+            position: relative;
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.1) rotate(5deg);
+            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.5);
+        }
+
+        .whatsapp-btn i {
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        /* Scroll to Top */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            width: 44px;
+            height: 44px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 998;
+            box-shadow: 0 4px 15px rgba(30, 136, 199, 0.3);
+        }
+
+        .scroll-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(30, 136, 199, 0.5);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+            
+            header {
+                left: 0.75rem;
+                right: 0.75rem;
+                top: 0.75rem;
+                padding: 0.5rem;
+                min-height: 60px;
+            }
+            
+            .menu-toggle {
+                display: flex;
+            }
+            
+            nav {
+                display: none;
+            }
+            
+            .mobile-menu.active {
+                display: block;
+            }
+            
+            .clinic-hero {
+                min-height: 60vh;
+                padding: 6rem 0 3rem;
+            }
+            
+            .clinic-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .clinic-hero p {
+                font-size: 1rem;
+            }
+            
+            .intro-content h2,
+            .advanced-content h2 {
+                font-size: 1.75rem;
+            }
+            
+            .services-grid,
+            .features-grid,
+            .cases-grid,
+            .tech-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .medical-elements {
+                display: none;
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 12px 30px rgba(37, 211, 102, 0.5);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img class="logo-img" src="1000038899.png" alt="مركز فهد القرني">
+                    <div class="logo-text">
+                        <h1>فهد القرني</h1>
+                        <p>العلاج الطبيعي في التشيك</p>
+                    </div>
+                </div>
+
+                <nav id="nav">
+                    <a href="index.html#home">الصفحة الرئيسية</a>
+                    <a href="index.html#about">عن فهد القرني</a>
+                    <a href="index.html#clinics" class="active">مصحات العلاج الطبيعي</a>
+                    <a href="index.html#faq">سؤال وجواب</a>
+                    <a href="index.html#contact">الاتصال</a>
+                </nav>
+
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-calendar-check"></i>
+                    احجز استشارة
+                </a>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="index.html#home">الصفحة الرئيسية</a>
+                <a href="index.html#about">عن فهد القرني</a>
+                <a href="index.html#clinics" class="active">مصحات العلاج الطبيعي</a>
+                <a href="index.html#faq">سؤال وجواب</a>
+                <a href="index.html#contact">الاتصال</a>
+                <a href="#contact" class="btn btn-primary" style="margin: 1rem 0 0; width: 100%;">
+                    <i class="fas fa-calendar-check"></i>
+                    احجز استشارة
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Clinic Hero with Medical Theme -->
+    <section class="clinic-hero">
+        <div class="medical-elements">
+            <div class="medical-icon">🩺</div>
+            <div class="medical-icon">🧠</div>
+            <div class="medical-icon">🦾</div>
+            <div class="medical-icon">🏥</div>
+            <div class="medical-icon">💊</div>
+        </div>
+        <div class="container">
+            <div class="clinic-hero-content">
+                <div class="clinic-badge">
+                    <i class="fas fa-brain"></i>
+                    <span>مركز متخصص في التأهيل العصبي والحركي</span>
+                </div>
+                <h1>مركز <span>أركادا</span></h1>
+                <p>مركز دولي للعلاج الطبيعي والتأهيل الحركي والعصبي في جمهورية التشيك - نقدم علاجاً تأهيلياً مبتكراً بأجهزة متقدمة وبرامج شخصية مصممة خصيصاً لاحتياجاتك</p>
+                <a href="#contact" class="btn btn-neuro">
+                    <i class="fas fa-calendar-alt"></i>
+                    احجز استشارة متخصصة
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="intro-section">
+        <div class="container">
+            <div class="intro-content">
+                <h2>مركز أركادا للعلاج الطبيعي والتأهيل</h2>
+                <p>نحن مركز دولي للعلاج الطبيعي والتأهيل الحركي والعصبي في جمهورية التشيك، متخصص في مساعدة المرضى المصابين بأمراض عصبية وحركية. من المهم لنا أن يتم رعاية مرضانا من قبل اخصائيين لديهم الخبرة والكفاءة العالية في مجال العلاج الطبيعي وإعادة التأهيل.</p>
+                <p>في مركز أركادا للعلاج الطبيعي وإعادة التأهيل الحركي والعصبي، نلتزم بتقديم أفضل الخدمات لضمان تحسين صحتك وجودة حياتك.</p>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h3>فريق متخصص</h3>
+                        <p>اخصائيين علاج طبيعي ذوو خبرة عالية في مجال العلاج الطبيعي وإعادة التأهيل</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3>جودة عالمية</h3>
+                        <p>معايير علاجية وفق أحدث الأبحاث والبروتوكولات العالمية</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>رعاية شخصية</h3>
+                        <p>اهتمام بالرعاية الشخصية لمرضانا من كل النواحي الطبية والنفسية</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3>تجهيزات متكاملة</h3>
+                        <p>أحدث الأجهزة والتقنيات العلاجية المتطورة</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">خدماتنا المتخصصة</div>
+                <h2 class="section-title">برامج العلاج <span>والتأهيل</span></h2>
+                <p class="section-desc">نقدم مجموعة متكاملة من برامج العلاج والتأهيل المصممة خصيصاً لكل حالة</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- علاج البالغين -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <i class="fas fa-user-injured"></i>
+                        <h3>علاج البالغين</h3>
+                        <p>التأهيل الحركي للكبار</p>
+                    </div>
+                    <div class="service-content">
+                        <p>برامج علاج طبيعي متخصصة لتأهيل المرضى بعد الإصابات باستخدام أحدث التقنيات:</p>
+                        <ul>
+                            <li>تأهيل بعد الجلطات الدماغية</li>
+                            <li>علاج التهاب الأعصاب</li>
+                            <li>تأهيل الشلل النصفي والشلل الرباعي</li>
+                            <li>إعادة تأهيل بعد العمليات الجراحية</li>
+                            <li>تحسين القدرة الحركية العامة</li>
+                            <li>علاج أمراض الجهاز الحركي المزمنة</li>
+                        </ul>
+                        <a href="#contact" class="service-link">
+                            المزيد من التفاصيل
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- علاج الأطفال -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <i class="fas fa-child"></i>
+                        <h3>علاج الأطفال</h3>
+                        <p>التأهيل العصبي للأطفال</p>
+                    </div>
+                    <div class="service-content">
+                        <p>برامج متخصصة لعلاج الأطفال المصابين بأمراض عصبية وحركية:</p>
+                        <ul>
+                            <li>علاج الشلل الدماغي</li>
+                            <li>تأهيل تأخر النمو الحركي</li>
+                            <li>علاج إصابات الدماغ الرضية</li>
+                            <li>تلف الدماغ الناجم عن نقص الأكسجين</li>
+                            <li>العيوب الخلقية في الجهاز العصبي</li>
+                            <li>علاج التهاب الدماغ والأمراض العصبية</li>
+                        </ul>
+                        <a href="#contact" class="service-link">
+                            المزيد من التفاصيل
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- الحالات الصعبة -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <i class="fas fa-procedures"></i>
+                        <h3>الحالات الصعبة</h3>
+                        <p>التأهيل المكثف</p>
+                    </div>
+                    <div class="service-content">
+                        <p>برامج تأهيلية متخصصة للمرضى الذين يعانون من إعاقات شديدة:</p>
+                        <ul>
+                            <li>تلف دماغي بعد إصابات الدماغ الرضحيه</li>
+                            <li>تلف دماغي غير رضحي</li>
+                            <li>حالات الإعاقة الشديدة</li>
+                            <li>المرضى في غيبوبة عصبية</li>
+                            <li>الحالات التي تتطلب رعاية مكثفة</li>
+                            <li>برامج إعادة التأهيل طويلة المدى</li>
+                        </ul>
+                        <a href="#contact" class="service-link">
+                            المزيد من التفاصيل
+                            <i class="fas fa-arrow-left"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Cases Section -->
+    <section class="advanced-section">
+        <div class="container">
+            <div class="advanced-content">
+                <h2><i class="fas fa-stethoscope"></i> علاج الحالات الصعبة والمتقدمة</h2>
+                <p>برامج تأهيلية متخصصة للمرضى الذين يعانون من تلف دماغي بعد إصابات الدماغ الرضحيه أو غير الرضحيه، والتي أدت إلى إعاقات شديدة أو غيبوبة عصبية. هذه البرامج مخصصة لحالات الإعاقة الصعبة وتتطلب رعاية متخصصة ومكثفة.</p>
+                
+                <div class="cases-grid">
+                    <div class="case-card">
+                        <h4>إصابات الدماغ الرضية</h4>
+                        <ul>
+                            <li>حوادث السيارات</li>
+                            <li>السقوط من مرتفعات</li>
+                            <li>إصابات الرياضة</li>
+                            <li>الحوادث المنزلية</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="case-card">
+                        <h4>إصابات الدماغ غير الرضية</h4>
+                        <ul>
+                            <li>السكتات الدماغية</li>
+                            <li>نقص الأكسجين</li>
+                            <li>الالتهابات الدماغية</li>
+                            <li>الأورام الدماغية</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="case-card">
+                        <h4>حالات الغيبوبة</h4>
+                        <ul>
+                            <li>الغيبوبة العصبية</li>
+                            <li>حالات اللاوعي</li>
+                            <li>الغيبوبة المستمرة</li>
+                            <li>حالات انخفاض الوعي</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="case-card">
+                        <h4>الإعاقات الشديدة</h4>
+                        <ul>
+                            <li>الشلل الرباعي</li>
+                            <li>إعاقات حركية كاملة</li>
+                            <li>اضطرابات التواصل الشديدة</li>
+                            <li>الإعاقات المتعددة</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="technology-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">التقنيات والأجهزة</div>
+                <h2 class="section-title">أحدث التقنيات <span>العلاجية</span></h2>
+                <p class="section-desc">نستخدم أحدث الأجهزة والتقنيات الطبية لتقديم أفضل نتائج العلاج</p>
+            </div>
+
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>الروبوت العلاجي</h3>
+                    <p>أجهزة روبوتية متطورة للمساعدة في إعادة تأهيل الحركة</p>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-walking"></i>
+                    </div>
+                    <h3>أنظمة المشي</h3>
+                    <p>أنظمة متطورة لمساعدة المرضى على استعادة قدرة المشي</p>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>تحفيز عصبي</h3>
+                    <p>تقنيات تحفيز الدماغ والأعصاب لتعزيز الشفاء</p>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>العلاج باللعب</h3>
+                    <p>أنظمة علاجية تفاعلية تجمع بين العلاج والترفيه</p>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-vr-cardboard"></i>
+                    </div>
+                    <h3>الواقع الافتراضي</h3>
+                    <p>تقنيات الواقع الافتراضي في برامج التأهيل</p>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>نظام المتابعة</h3>
+                    <p>أنظمة متطورة لمتابعة تطور الحالة وتحليل النتائج</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="clinic-cta">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge" style="background: rgba(255,255,255,0.2); color: white;">استشارة مجانية</div>
+                <h2 class="section-title">ابدأ رحلة <span>العلاج المتخصص</span></h2>
+                <p class="section-desc" style="color: rgba(255,255,255,0.9);">مع فريق من المتخصصين وأحدث التقنيات الطبية، نحن هنا لمساعدتك على تحقيق أفضل النتائج في رحلة العلاج والتأهيل</p>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="https://wa.me/420608466666?text=مرحباً، أرغب في استشارة حول برامج العلاج في مركز أركادا" class="btn btn-primary" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    تواصل عبر واتساب
+                </a>
+                <a href="tel:+420608466666" class="btn btn-neuro">
+                    <i class="fas fa-phone"></i>
+                    اتصل بنا الآن
+                </a>
+                <a href="mailto:Js.evropa@seznam.cz?subject=استفسار عن برامج العلاج في مركز أركادا" class="btn btn-outline" style="background:transparent; color:white; border-color:white;">
+                    <i class="fas fa-envelope"></i>
+                    راسلنا بالبريد
+                </a>
+            </div>
+
+            <div class="contact-info-cards">
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h4>هاتف مباشر</h4>
+                    <p>+420 608 466 666</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <h4>واتساب</h4>
+                    <p>+420 608 466 666</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h4>البريد الإلكتروني</h4>
+                    <p>Js.evropa@seznam.cz</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-clock"></i>
+                    <h4>خدمات 24/7</h4>
+                    <p>استشارات طبية متاحة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img class="footer-logo-img" src="1000038901.jpg" alt="مركز فهد القرني">
+                        <div class="footer-logo-text">
+                            <h3>فهد القرني</h3>
+                            <p>لخدمات العلاجية والسياحية في التشيك</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <a href="index.html#home">الصفحة الرئيسية</a>
+                    <a href="index.html#about">عن فهد القرني</a>
+                    <a href="index.html#clinics">مصحات العلاج</a>
+                    <a href="index.html#faq">سؤال وجواب</a>
+                    <a href="index.html#contact">الاتصال</a>
+                </div>
+
+                <div class="footer-links">
+                    <h4>مركز أركادا</h4>
+                    <a href="#intro">عن المركز</a>
+                    <a href="#services">برامج العلاج</a>
+                    <a href="#advanced">الحالات الصعبة</a>
+                    <a href="#technology">التقنيات الطبية</a>
+                    <a href="#contact">الحجز والاستفسار</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>التخصصات الطبية</h4>
+                    <p style="color: rgba(255,255,255,0.7); margin-bottom: 1rem;">
+                        <i class="fas fa-brain" style="margin-left: 0.5rem;"></i>
+                        التأهيل العصبي المتخصص
+                    </p>
+                    <p style="color: rgba(255,255,255,0.7);">
+                        <i class="fas fa-walking" style="margin-left: 0.5rem;"></i>
+                        العلاج الطبيعي والحركي
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2024 مركز أركادا للعلاج الطبيعي - مركز فهد القرني للعلاج الطبيعي في التشيك. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/420608466666?text=مرحباً، أرغب في الاستفسار عن مركز أركادا للعلاج الطبيعي" target="_blank" class="whatsapp-btn" aria-label="تواصل عبر واتساب">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Scroll to Top -->
+    <div class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const navLinks = document.querySelectorAll('#nav a, .mobile-menu a');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            const icon = menuToggle.querySelector('i');
+            icon.className = mobileMenu.classList.contains('active') ? 'fas fa-times' : 'fas fa-bars';
+        });
+
+        // Header Scroll Effects
+        const header = document.getElementById('header');
+        let lastScrollTop = 0;
+        let scrollTimeout;
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                header.classList.add('hidden');
+            } else {
+                header.classList.remove('hidden');
+            }
+            
+            lastScrollTop = scrollTop;
+            
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(() => {
+                header.classList.remove('hidden');
+            }, 500);
+        });
+
+        // Active Navigation Link
+        function setActiveLink() {
+            const sections = document.querySelectorAll('section');
+            const scrollPos = window.pageYOffset + 100;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                const sectionId = section.getAttribute('id');
+
+                if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+
+        window.addEventListener('scroll', setActiveLink);
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    navLinks.forEach(link => link.classList.remove('active'));
+                    this.classList.add('active');
+
+                    mobileMenu.classList.remove('active');
+                    menuToggle.querySelector('i').className = 'fas fa-bars';
+
+                    window.scrollTo({
+                        top: target.offsetTop - 90,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!menuToggle.contains(e.target) && !mobileMenu.contains(e.target) && mobileMenu.classList.contains('active')) {
+                mobileMenu.classList.remove('active');
+                menuToggle.querySelector('i').className = 'fas fa-bars';
+            }
+        });
+
+        // Scroll to Top Button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Animate cards on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe cards for animation
+        document.querySelectorAll('.service-card, .feature-card, .case-card, .tech-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+
+        // Medical icons animation
+        const medicalIcons = document.querySelectorAll('.medical-icon');
+        medicalIcons.forEach((icon, index) => {
+            icon.style.animationDelay = `${index * 4}s`;
+        });
+    </script>
+</body>
+</html>

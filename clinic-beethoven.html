@@ -1,0 +1,2033 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>مصحة بيتهوفن في التشيك | مركز فهد القرني - العلاج الطبيعي والتأهيل الحركي</title>
+    <meta name="description" content="مصحة بيتهوفن في التشيك - مصحة تاريخية لعلاج التأهيل الحركي والعلاج بالمياه المعدنية. مكان عالج الموسيقار بيتهوفن نفسه!">
+    <meta name="keywords" content="مصحة بيتهوفن, العلاج الطبيعي في التشيك, مصحات التشيك, العلاج بالمياه المعدنية, التأهيل الحركي, علاج بيتهوفن">
+    <meta name="author" content="مركز فهد القرني">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="مصحة بيتهوفن | مركز فهد القرني">
+    <meta property="og:description" content="مصحة تاريخية عالجت الموسيقار بيتهوفن - أقوى مصحة للعلاج الطبيعي والتأهيل الحركي في التشيك">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://fahadcz.com/clinic-beethoven.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="1000038899.png">
+    <link rel="apple-touch-icon" href="1000038899.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://fahadcz.com/clinic-beethoven.html">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalClinic",
+      "name": "مصحة بيتهوفن",
+      "description": "مصحة تاريخية متخصصة في العلاج الطبيعي والتأهيل الحركي بالمياه المعدنية",
+      "url": "https://fahadcz.com/clinic-beethoven.html",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CZ",
+        "addressLocality": "Karlovy Vary",
+        "addressRegion": "Karlovy Vary Region"
+      },
+      "medicalSpecialty": "Physical Therapy, Rehabilitation, Balneotherapy",
+      "openingHours": "24/7"
+    }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1E88C7;
+            --primary-dark: #0D6CA3;
+            --primary-light: #E8F4FD;
+            --secondary: #17a71e;
+            --secondary-light: #F0F9F0;
+            --accent: #00ddff;
+            --accent-light: #FFF8E6;
+            --dark: #1A1A1A;
+            --dark-gray: #424242;
+            --gray: #757575;
+            --light-gray: #F5F5F5;
+            --light: #FFFFFF;
+            --border: rgba(0, 0, 0, 0.08);
+            --shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            --shadow-hover: 0 15px 40px rgba(0, 0, 0, 0.12);
+            --glass-bg: rgba(255, 255, 255, 0.95);
+            --glass-border: rgba(255, 255, 255, 0.2);
+            --gold: #FFD700;
+            --gold-dark: #D4AF37;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            line-height: 1.8;
+            color: var(--dark);
+            background: var(--light);
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Header Styles */
+        header {
+            position: fixed;
+            top: 0.75rem;
+            left: 0.75rem;
+            right: 0.75rem;
+            z-index: 1000;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 0.5rem 1rem;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            transform: translateY(0);
+            min-height: 70px;
+            display: flex;
+            align-items: center;
+        }
+
+        header.hidden {
+            transform: translateY(-120%);
+        }
+
+        header.scrolled {
+            top: 0.5rem;
+            left: 0.5rem;
+            right: 0.5rem;
+            border-radius: 16px;
+            padding: 0.4rem 0.8rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 0;
+            position: relative;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            flex-shrink: 0;
+            z-index: 1001;
+        }
+
+        .logo-img {
+            height: 50px;
+            width: 50px;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+
+        .logo-text h1 {
+            font-size: 0.95rem;
+            color: var(--dark);
+            margin-bottom: 0;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+
+        .logo-text p {
+            color: var(--gray);
+            font-size: 0.75rem;
+            line-height: 1.2;
+        }
+
+        nav {
+            display: flex;
+            gap: 0.25rem;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 0.25rem;
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        nav a {
+            padding: 0.6rem 0.95rem;
+            color: var(--dark-gray);
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            position: relative;
+            overflow: hidden;
+            font-size: 0.875rem;
+            white-space: nowrap;
+        }
+
+        nav a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            border-radius: 25px;
+            z-index: -1;
+        }
+
+        nav a:hover, nav a.active {
+            color: white;
+        }
+
+        nav a.active {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            box-shadow: 0 6px 15px rgba(13,108,163,0.2);
+            position: relative;
+            z-index: 1;
+        }
+
+        nav a:hover {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            box-shadow: 0 6px 15px rgba(13,108,163,0.2);
+            position: relative;
+            z-index: 1;
+        }
+        nav a:hover::before, nav a.active::before {
+            opacity: 1;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-family: 'Cairo', sans-serif;
+            font-size: 0.875rem;
+            white-space: nowrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            box-shadow: 0 4px 15px rgba(30, 136, 199, 0.2);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(30, 137, 199, 0.639);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .btn-gold {
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+        }
+
+        .btn-gold:hover {
+            background: linear-gradient(135deg, var(--gold-dark), var(--gold));
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+        }
+
+        .menu-toggle {
+            display: none;
+            width: 44px;
+            height: 44px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            border: none;
+            border-radius: 14px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menu-toggle:hover {
+            transform: rotate(90deg);
+        }
+
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            left: 0;
+            background: var(--glass-bg);
+            backdrop-filter: blur(30px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            margin-top: 0.75rem;
+            padding: 1rem;
+            z-index: 1000;
+        }
+
+        .mobile-menu.active {
+            display: block;
+            animation: slideDown 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .mobile-menu a {
+            display: block;
+            padding: 1rem 1.25rem;
+            color: var(--dark);
+            text-decoration: none;
+            border-radius: 14px;
+            margin: 0.25rem 0;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .mobile-menu a:hover, .mobile-menu a.active {
+            background: var(--primary-light);
+            color: var(--primary);
+            transform: translateX(-5px);
+        }
+
+        @keyframes slideDown {
+            from { 
+                opacity: 0; 
+                transform: translateY(-10px); 
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
+            }
+        }
+
+        /* Clinic Hero Section with Music Theme */
+        .clinic-hero {
+            position: relative;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            padding: 8rem 0 4rem;
+            overflow: hidden;
+            background: linear-gradient(to bottom,
+                        rgba(0, 0, 0, 0.4) 0%,
+                        rgba(0, 0, 0, 0.6) 100%),
+                        url('https://images.unsplash.com/photo-1586773860418-dc22f8b874bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .music-notes {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .music-note {
+            position: absolute;
+            font-size: 2rem;
+            color: rgba(255, 255, 255, 0.2);
+            animation: float 20s linear infinite;
+        }
+
+        .music-note:nth-child(1) { top: 10%; right: 10%; animation-delay: 0s; }
+        .music-note:nth-child(2) { top: 20%; right: 30%; animation-delay: 4s; }
+        .music-note:nth-child(3) { top: 40%; right: 20%; animation-delay: 8s; }
+        .music-note:nth-child(4) { top: 60%; right: 40%; animation-delay: 12s; }
+        .music-note:nth-child(5) { top: 30%; right: 60%; animation-delay: 16s; }
+
+        @keyframes float {
+            0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.3; }
+            90% { opacity: 0.3; }
+            100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+        }
+
+        .clinic-hero-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+            max-width: 800px;
+        }
+
+        .clinic-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 0.5rem 1.25rem;
+            border-radius: 50px;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .clinic-hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: white;
+            font-weight: 800;
+        }
+
+        .clinic-hero h1 span {
+            background: linear-gradient(135deg, var(--gold), #FF9800);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .clinic-hero p {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        /* Beethoven Story Section */
+        .story-section {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, var(--light-gray) 0%, var(--light) 100%);
+        }
+
+        .story-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        @media (min-width: 992px) {
+            .story-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .story-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark);
+            font-weight: 800;
+        }
+
+        .story-content h2 i {
+            color: var(--gold);
+            margin-left: 1rem;
+        }
+
+        .story-content p {
+            color: var(--dark-gray);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            font-size: 1.125rem;
+        }
+
+        .famous-people {
+            margin-top: 2rem;
+            padding: 2rem;
+            background: rgba(255, 215, 0, 0.1);
+            border-radius: 20px;
+            border-right: 4px solid var(--gold);
+        }
+
+        .famous-people h3 {
+            color: var(--gold-dark);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .famous-people ul {
+            list-style: none;
+        }
+
+        .famous-people li {
+            padding: 0.5rem 0;
+            color: var(--dark-gray);
+            position: relative;
+            padding-right: 2rem;
+        }
+
+        .famous-people li::before {
+            content: '♫';
+            position: absolute;
+            right: 0;
+            color: var(--gold);
+            font-size: 1.2rem;
+        }
+
+        .story-image {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-hover);
+            transform: rotate(-2deg);
+            transition: transform 0.3s ease;
+        }
+
+        .story-image:hover {
+            transform: rotate(0deg);
+        }
+
+        .story-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Clinic Info Section */
+        .clinic-info-section {
+            padding: 5rem 0;
+            background: var(--light);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 4rem;
+        }
+
+        .info-card {
+            background: var(--light);
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.4s ease;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .image-text-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0;
+        }
+
+        @media (min-width: 992px) {
+            .image-text-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .image-text-grid.reverse {
+                direction: ltr;
+            }
+            
+            .image-text-grid.reverse .text-content {
+                order: 2;
+            }
+            
+            .image-text-grid.reverse .image-content {
+                order: 1;
+            }
+        }
+
+        .image-content {
+            position: relative;
+            min-height: 400px;
+            overflow: hidden;
+        }
+
+        .image-content img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .info-card:hover .image-content img {
+            transform: scale(1.05);
+        }
+
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(to top, 
+                        rgba(0, 0, 0, 0.3) 0%,
+                        transparent 50%);
+            display: flex;
+            align-items: flex-end;
+            padding: 2rem;
+        }
+
+        .image-label {
+            background: rgba(255, 255, 255, 0.9);
+            color: var(--dark);
+            padding: 0.75rem 1.5rem;
+            border-radius: 12px;
+            font-weight: 700;
+            backdrop-filter: blur(10px);
+        }
+
+        .text-content {
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .text-content h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark);
+            font-weight: 800;
+            line-height: 1.3;
+        }
+
+        .text-content h2 i {
+            color: var(--primary);
+            margin-left: 0.75rem;
+        }
+
+        .text-content p {
+            color: var(--dark-gray);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            font-size: 1.125rem;
+        }
+
+        .text-content ul {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+
+        .text-content ul li {
+            padding: 0.75rem 0;
+            color: var(--dark-gray);
+            position: relative;
+            padding-right: 2rem;
+            line-height: 1.6;
+        }
+
+        .text-content ul li::before {
+            content: '✓';
+            position: absolute;
+            right: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .highlight-box {
+            background: var(--primary-light);
+            border-right: 4px solid var(--primary);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+        }
+
+        .highlight-box h4 {
+            color: var(--primary-dark);
+            margin-bottom: 0.75rem;
+            font-size: 1.25rem;
+        }
+
+        /* Treatments Section */
+        .treatments-section {
+            padding: 5rem 0;
+            background: var(--light-gray);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .section-badge {
+            display: inline-block;
+            background: var(--primary-light);
+            color: var(--primary);
+            padding: 0.5rem 1.25rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-size: clamp(1.75rem, 4vw, 2.75rem);
+            margin-bottom: 1.25rem;
+            line-height: 1.2;
+            color: var(--dark);
+            font-weight: 800;
+        }
+
+        .section-title span {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-desc {
+            font-size: 1.125rem;
+            color: var(--dark-gray);
+            max-width: 48rem;
+            margin: 0 auto;
+            line-height: 1.8;
+            padding: 0 1rem;
+        }
+
+        .treatments-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .treatment-card {
+            background: var(--light);
+            border-radius: 20px;
+            padding: 2rem;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            border: 2px solid transparent;
+        }
+
+        .treatment-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--primary-light);
+        }
+
+        .treatment-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--primary-light);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .treatment-card:hover .treatment-icon {
+            transform: scale(1.1) rotate(5deg);
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+        }
+
+        .treatment-icon i {
+            font-size: 2rem;
+            color: var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        .treatment-card:hover .treatment-icon i {
+            color: white;
+        }
+
+        .treatment-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+            font-weight: 700;
+        }
+
+        .treatment-card p {
+            color: var(--gray);
+            line-height: 1.8;
+        }
+
+        /* Water Therapy Section */
+        .water-section {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, var(--primary-light) 0%, var(--light) 100%);
+        }
+
+        .water-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .water-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-dark);
+        }
+
+        .water-benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .water-benefit {
+            background: white;
+            border-radius: 16px;
+            padding: 1.5rem;
+            text-align: center;
+            border: 2px solid var(--primary-light);
+            transition: all 0.3s ease;
+        }
+
+        .water-benefit:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        .water-benefit i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        /* Restaurant Section */
+        .restaurant-section {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.05) 0%, var(--light) 100%);
+        }
+
+        .restaurant-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        @media (min-width: 992px) {
+            .restaurant-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .restaurant-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--gold-dark);
+        }
+
+        .menu-items {
+            margin-top: 2rem;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        .menu-item i {
+            color: var(--gold);
+            font-size: 1.5rem;
+        }
+
+        /* Pricing Table Section */
+        .pricing-section {
+            padding: 5rem 0;
+            background: var(--light);
+        }
+
+        .pricing-table-container {
+            overflow-x: auto;
+            margin-top: 3rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            background: white;
+        }
+
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 1000px;
+        }
+
+        .pricing-table th {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.125rem;
+        }
+
+        .pricing-table td {
+            padding: 1.25rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+            color: var(--dark-gray);
+        }
+
+        .pricing-table tr:nth-child(even) {
+            background: var(--light-gray);
+        }
+
+        .pricing-table tr:hover {
+            background: var(--primary-light);
+        }
+
+        .season-badge {
+            display: inline-block;
+            background: var(--gold);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Additional Services */
+        .services-section {
+            padding: 5rem 0;
+            background: var(--light-gray);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: var(--light);
+            border-radius: 20px;
+            padding: 2.5rem;
+            text-align: center;
+            transition: all 0.4s ease;
+            box-shadow: var(--shadow);
+            border: 2px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--primary-light);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--primary-light);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover .service-icon {
+            transform: scale(1.1) rotate(10deg);
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+        }
+
+        .service-icon i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover .service-icon i {
+            color: white;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        /* CTA Section */
+        .clinic-cta {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            text-align: center;
+        }
+
+        .clinic-cta .section-title {
+            color: white;
+        }
+
+        .clinic-cta .section-title span {
+            background: linear-gradient(135deg, var(--gold), #FF9800);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .cta-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin: 3rem 0;
+        }
+
+        .clinic-cta .btn-primary {
+            background: white;
+            color: var(--primary);
+        }
+
+        .clinic-cta .btn-gold {
+            background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+        }
+
+        .contact-info-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 4rem;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .contact-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .contact-card i {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .contact-card h4 {
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9));
+            color: white;
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-logo-img {
+            height: 50px;
+            width: auto;
+            border-radius: 12px;
+        }
+
+        .footer-logo-text h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.25rem;
+            color: white;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1.25rem;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .footer-links h4 {
+            margin-bottom: 1.25rem;
+            font-size: 1.125rem;
+            color: white;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links a:hover {
+            color: white;
+            transform: translateX(-5px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 1.5rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.8125rem;
+        }
+
+        /* WhatsApp Float */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 1.5rem;
+            left: 1.5rem;
+            z-index: 999;
+        }
+
+        .whatsapp-btn {
+            position: relative;
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.1) rotate(5deg);
+            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.5);
+        }
+
+        .whatsapp-btn i {
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        /* Scroll to Top */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            width: 44px;
+            height: 44px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 998;
+            box-shadow: 0 4px 15px rgba(30, 136, 199, 0.3);
+        }
+
+        .scroll-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(30, 136, 199, 0.5);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+            
+            header {
+                left: 0.75rem;
+                right: 0.75rem;
+                top: 0.75rem;
+                padding: 0.5rem;
+                min-height: 60px;
+            }
+            
+            .menu-toggle {
+                display: flex;
+            }
+            
+            nav {
+                display: none;
+            }
+            
+            .mobile-menu.active {
+                display: block;
+            }
+            
+            .clinic-hero {
+                min-height: 60vh;
+                padding: 6rem 0 3rem;
+            }
+            
+            .clinic-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .clinic-hero p {
+                font-size: 1rem;
+            }
+            
+            .story-content h2,
+            .text-content h2,
+            .water-content h2,
+            .restaurant-info h2 {
+                font-size: 1.75rem;
+            }
+            
+            .treatments-grid,
+            .water-benefits,
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .info-card {
+                margin: 0 -1rem;
+                border-radius: 0;
+            }
+            
+            .text-content {
+                padding: 2rem 1rem;
+            }
+            
+            .pricing-table-container {
+                margin: 0 -1rem;
+                border-radius: 0;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .music-notes {
+                display: none;
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 12px 30px rgba(37, 211, 102, 0.5);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img class="logo-img" src="1000038899.png" alt="مركز فهد القرني">
+                    <div class="logo-text">
+                        <h1>فهد القرني</h1>
+                        <p>العلاج الطبيعي في التشيك</p>
+                    </div>
+                </div>
+
+                <nav id="nav">
+                    <a href="index.html#home">الصفحة الرئيسية</a>
+                    <a href="index.html#about">عن فهد القرني</a>
+                    <a href="index.html#clinics" class="active">مصحات العلاج الطبيعي</a>
+                    <a href="index.html#faq">سؤال وجواب</a>
+                    <a href="index.html#contact">الاتصال</a>
+                </nav>
+
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-calendar-check"></i>
+                    احجز استشارة
+                </a>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="index.html#home">الصفحة الرئيسية</a>
+                <a href="index.html#about">عن فهد القرني</a>
+                <a href="index.html#clinics" class="active">مصحات العلاج الطبيعي</a>
+                <a href="index.html#faq">سؤال وجواب</a>
+                <a href="index.html#contact">الاتصال</a>
+                <a href="#contact" class="btn btn-primary" style="margin: 1rem 0 0; width: 100%;">
+                    <i class="fas fa-calendar-check"></i>
+                    احجز استشارة
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Clinic Hero with Music Theme -->
+    <section class="clinic-hero" style ="background-image: url('cisarske-beethoven-lazne-Spa-01.webp');">
+        <div class="music-notes">
+            <div class="music-note">♫</div>
+            <div class="music-note">♪</div>
+            <div class="music-note">♫</div>
+            <div class="music-note">♪</div>
+            <div class="music-note">♫</div>
+        </div>
+        <div class="container">
+            <div class="clinic-hero-content">
+                <div class="clinic-badge">
+                    <i class="fas fa-music"></i>
+                    <span>مصحة الموسيقار بيتهوفن</span>
+                </div>
+                <h1>مصحة <span>بيتهوفن</span></h1>
+                <p>مكان عالَج فيه الموسيقار العظيم بيتهوفن نفسه - أقوى مصحة تشيكية لعلاج التأهيل الحركي بالمياه المعدنية</p>
+                <a href="#contact" class="btn btn-gold">
+                    <i class="fas fa-calendar-alt"></i>
+                    احجز برنامجك الآن
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beethoven Story Section -->
+    <section class="story-section">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-content">
+                    <h2><i class="fas fa-guitar"></i> قصة مصحة بيتهوفن</h2>
+                    <p>ترجع تسمية مصح بيتهوفن بهذا الاسم نسبة إلى الموسيقار العظيم <strong>بيتهوفن</strong> الذي تعالج فيها في يوم من الأيام.</p>
+                    <p>يعتبر هذا المصح من أقوى المصحات التشيكية لعلاج التأهيل الحركي التي يمكنك إيجادها بسبب توفر الحمامات المعدنية التي تعمل على علاج المرضى وتخفيف الكثير من الأمراض الحركية.</p>
+                    
+                    <div class="famous-people">
+                        <h3><i class="fas fa-crown"></i> شخصيات مشهورة تلقت العلاج في المصح</h3>
+                        <ul>
+                            <li>لودفيج فان بيتهوفن - الموسيقار العالمي</li>
+                            <li>شخصيات ملكية أوروبية</li>
+                            <li>فنانين وموسيقيين مشهورين</li>
+                            <li>شخصيات سياسية ودبلوماسية</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="story-image">
+                    <img src="10-1.png.webp" alt="الموسيقار بيتهوفن">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accommodation Section -->
+    <section class="clinic-info-section">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="image-text-grid">
+                        <div class="image-content">
+                            <img src="12-1.png.webp" alt="غرف مصحة بيتهوفن">
+                            <div class="image-overlay">
+                                <div class="image-label">193 غرفة فاخرة</div>
+                            </div>
+                        </div>
+                        <div class="text-content">
+                            <h2><i class="fas fa-bed"></i> السكن في مصحة بيتهوفن</h2>
+                            <p>يضم المنتجع العديد من الغرف التي تصل عددها إلى <strong>193 غرفة</strong> تم تجهيزهم بأعلى مستويات وتوفير كافة وسائل الراحة بها:</p>
+                            
+                            <ul>
+                                <li>حمام خاص في كل غرفة</li>
+                                <li>أسرة مريحة ومجهزة طبياً</li>
+                                <li>أجهزة تلفزيون حديثة</li>
+                                <li>إمكانية استخدام الإنترنت المجاني</li>
+                                <li>خدمات تنظيف يومية</li>
+                                <li>خزائن أمان شخصية</li>
+                                <li>تكييف وتحكم في درجة الحرارة</li>
+                                <li>خدمات فندقية فاخرة للنزلاء</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treatments Section -->
+    <section class="treatments-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">طرق العلاج</div>
+                <h2 class="section-title">طرق العلاج المتبعة <span>في المصح</span></h2>
+                <p class="section-desc">نقدم مجموعة شاملة من العلاجات المتطورة تحت إشراف فريق طبي متخصص</p>
+            </div>
+
+            <div class="treatments-grid">
+                <div class="treatment-card">
+                    <div class="treatment-icon">
+                        <i class="fas fa-bath"></i>
+                    </div>
+                    <h3>الحمامات المعدنية</h3>
+                    <p>الحمامات المعدنية وحمامات العلاج بالمياه المعدنية المتناوبة (ساخن وبارد)</p>
+                </div>
+
+                <div class="treatment-card">
+                    <div class="treatment-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>العلاج بالتمارين</h3>
+                    <p>العلاج بالتمارين الفردية في غرفة منفردة ومعالج شخصي</p>
+                </div>
+
+                <div class="treatment-card">
+                    <div class="treatment-icon">
+                        <i class="fas fa-swimming-pool"></i>
+                    </div>
+                    <h3>العلاج المائي</h3>
+                    <p>التمارين العلاجية المنفردة في حوض المياه المعدنية والتمارين الجماعية في المسبح</p>
+                </div>
+
+                <div class="treatment-card">
+                    <div class="treatment-icon">
+                        <i class="fas fa-hand-holding-water"></i>
+                    </div>
+                    <h3>المساج تحت الماء</h3>
+                    <p>المساج بضغط تحت الماء والعلاج بالمياه العلاجية الجاكوزي أو الإسكتلندي</p>
+                </div>
+
+                <div class="treatment-card">
+                    <div class="treatment-icon">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3>علاج ثاني أكسيد الكربون</h3>
+                    <p>العلاج بغاز ثاني أكسيد الكربون في المسبح أو بالحقن تحت الجلد (الإبر الغازية)</p>
+                </div>
+
+                <div class="treatment-card">
+                    <div class="treatment-icon">
+                        <i class="fas fa-hands"></i>
+                    </div>
+                    <h3>التدليك والمساج</h3>
+                    <p>المعالجة بأنواع وطرق مختلفة من التدليك والمساج المتخصص</p>
+                </div>
+
+                <div class="treatment-card">
+                    <div class="treatment-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>العلاج الفيزيائي</h3>
+                    <p>العلاج الكهربائي، المغناطيسي، العلاج بالليزر، ودوامات الأطراف العلوية والسفلية</p>
+                </div>
+
+                <div class="treatment-card">
+                    <div class="treatment-icon">
+                        <i class="fas fa-candy-cane"></i>
+                    </div>
+                    <h3>علاج شمع البارافين</h3>
+                    <p>العلاج بشمع البارافين لتهدئة المفاصل وتخفيف الآلام</p>
+                </div>
+
+                <div class="treatment-card">
+                    <div class="treatment-icon">
+                        <i class="fas fa-briefcase-medical"></i>
+                    </div>
+                    <h3>العلاج الوظيفي</h3>
+                    <p>التدريب بالعمل والعلاج الوظيفي لإعادة التأهيل المهني</p>
+                </div>
+
+                <div class="treatment-card">
+                    <div class="treatment-icon">
+                        <i class="fas fa-lungs"></i>
+                    </div>
+                    <h3>استنشاق الأكسجين</h3>
+                    <p>استنشاق الأكسجين النقي لتنشيط الخلايا الضعيفة وإعادة النشاط للجسم</p>
+                </div>
+
+                <div class="treatment-card">
+                    <div class="treatment-icon">
+                        <i class="fas fa-glass-whiskey"></i>
+                    </div>
+                    <h3>شرب المياه المعدنية</h3>
+                    <p>العلاج بشرب المياه المعدنية لتنظيف الأمعاء من الرواسب القديمة وتنشيط المعدة</p>
+                </div>
+
+                <div class="treatment-card">
+                    <div class="treatment-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>علاجات متقدمة</h3>
+                    <p>العلاج الكهربائي إندومد، المعالجة بالصدى، السولوكس، العلاج بالموجات فوق الصوتية والعلاج الضوئي</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Water Therapy Section -->
+    <section class="water-section">
+        <div class="container">
+            <div class="water-content">
+                <h2><i class="fas fa-tint"></i> ما هي المياه المعدنية؟</h2>
+                <p>المياه المعدنية في مصحة بيتهوفن هي مياه طبيعية غنية بالمعادن العلاجية التي تساعد في:</p>
+                
+                <div class="water-benefits">
+                    <div class="water-benefit">
+                        <i class="fas fa-heartbeat"></i>
+                        <h4>تحسين الدورة الدموية</h4>
+                        <p>توسيع الأوعية الدموية وتحسين تدفق الدم</p>
+                    </div>
+                    <div class="water-benefit">
+                        <i class="fas fa-bone"></i>
+                        <h4>تخفيف آلام المفاصل</h4>
+                        <p>تخفيف الالتهابات وتحسين حركة المفاصل</p>
+                    </div>
+                    <div class="water-benefit">
+                        <i class="fas fa-brain"></i>
+                        <h4>الاسترخاء العصبي</h4>
+                        <p>تهدئة الجهاز العصبي وتقليل التوتر</p>
+                    </div>
+                    <div class="water-benefit">
+                        <i class="fas fa-recycle"></i>
+                        <h4>إزالة السموم</h4>
+                        <p>تنظيف الجسم من السموم والفضلات</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurant Section -->
+    <section class="restaurant-section">
+        <div class="container">
+            <div class="restaurant-grid">
+                <div class="restaurant-image">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="مطعم بيتهوفن" style="border-radius: 20px; width: 100%;">
+                </div>
+                <div class="restaurant-info">
+                    <h2><i class="fas fa-utensils"></i> مطعم بيتهوفن</h2>
+                    <p>يقدم لكم مطعم بيتهوفن أشهى المأكولات ويوفر الطعام تبعاً لحمية غذائية معينة، مع مراعاة الاحتياجات الصحية الخاصة لكل مريض.</p>
+                    
+                    <div class="highlight-box">
+                        <h4><i class="fas fa-seedling"></i> وجبات متخصصة</h4>
+                        <p>تقديم الوجبات النباتية والأنواع المختلفة من الأطعمة التشيكية التقليدية والصحية.</p>
+                    </div>
+                    
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>وجبات نباتية صحية</span>
+                        </div>
+                        <div class="menu-item">
+                            <i class="fas fa-apple-alt"></i>
+                            <span>حميات غذائية مخصصة</span>
+                        </div>
+                        <div class="menu-item">
+                            <i class="fas fa-utensil-spoon"></i>
+                            <span>أطباق تشيكية تقليدية</span>
+                        </div>
+                        <div class="menu-item">
+                            <i class="fas fa-user-md"></i>
+                            <span>استشارات غذائية مجانية</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">الأسعار</div>
+                <h2 class="section-title">أسعار مصحة <span>بيتهوفن</span></h2>
+                <p class="section-desc">لا تعد تكلفة العلاج في مصحة بيتهوفن غالية بالنسبة إلى ما يقدمه من رعاية صحية وخدمات مختلفة</p>
+            </div>
+
+            <div class="pricing-table-container">
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th rowspan="2">أنواع الغرف</th>
+                            <th colspan="2">
+                                <div class="season-badge">2/28 - 1/1</div>
+                                <div class="season-badge">12/23 - 11/1</div>
+                            </th>
+                            <th colspan="2">
+                                <div class="season-badge">4/30 - 3/1</div>
+                                <div class="season-badge">10/31 - 10/1</div>
+                            </th>
+                            <th colspan="2">
+                                <div class="season-badge">9/30 - 5/1</div>
+                                <div class="season-badge">24/12 - 31/12</div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>معالج</th>
+                            <th>مرافق</th>
+                            <th>معالج</th>
+                            <th>مرافق</th>
+                            <th>معالج</th>
+                            <th>مرافق</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>الغرفة الفردية</td>
+                            <td>193 يورو</td>
+                            <td>121 يورو</td>
+                            <td>203 يورو</td>
+                            <td>131 يورو</td>
+                            <td>213 يورو</td>
+                            <td>141 يورو</td>
+                        </tr>
+                        <tr>
+                            <td>الفردية كومفرت مكيفة</td>
+                            <td>203 يورو</td>
+                            <td>131 يورو</td>
+                            <td>213 يورو</td>
+                            <td>141 يورو</td>
+                            <td>223 يورo</td>
+                            <td>151 يورو</td>
+                        </tr>
+                        <tr>
+                            <td>الزوجية ستاندرد</td>
+                            <td>173 يورو</td>
+                            <td>101 يورو</td>
+                            <td>183 يورو</td>
+                            <td>111 يورو</td>
+                            <td>193 يورو</td>
+                            <td>121 يورو</td>
+                        </tr>
+                        <tr>
+                            <td>زوجية كومفرت مكيفة</td>
+                            <td>183 يورو</td>
+                            <td>111 يورو</td>
+                            <td>193 يورو</td>
+                            <td>121 يورو</td>
+                            <td>203 يورo</td>
+                            <td>131 يورو</td>
+                        </tr>
+                        <tr>
+                            <td>سويت</td>
+                            <td>218 يورو</td>
+                            <td>146 يورو</td>
+                            <td>228 يورو</td>
+                            <td>156 يورو</td>
+                            <td>238 يورو</td>
+                            <td>166 يورو</td>
+                        </tr>
+                        <tr>
+                            <td>سويت عائلي</td>
+                            <td>248 يورو</td>
+                            <td>176 يورو</td>
+                            <td>258 يورو</td>
+                            <td>186 يورو</td>
+                            <td>268 يورو</td>
+                            <td>196 يورو</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="highlight-box" style="margin-top: 3rem; text-align: center;">
+                <h4><i class="fas fa-info-circle"></i> ملاحظات هامة</h4>
+                <p>• الأسعار تشمل الإقامة والعلاج والوجبات • الحد الأدنى للإقامة 14 يوم • الأسعار للفرد في اليوم • تتوفر خصومات للعلاجات الطويلة • الأسعار قابلة للتغير حسب الموسم</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services -->
+    <section class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">خدمات إضافية</div>
+                <h2 class="section-title">معلومات وخدمات <span>إضافية</span></h2>
+                <p class="section-desc">خدمات متكاملة لراحتك وضمان أفضل تجربة علاجية</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h3>العلاج الخارجي</h3>
+                    <p>إمكانية الحصول على جلسات علاجية خارجية للمقيمين خارج المصح</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-nurse"></i>
+                    </div>
+                    <h3>رعاية تمريضية 24/7</h3>
+                    <p>فريق تمريض متخصص متاح على مدار الساعة لرعاية المرضى</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>خدمات الترجمة</h3>
+                    <p>مترجمين عرب متاحين لمساعدة المرضى في التواصل مع الأطباء</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>خدمات النقل</h3>
+                    <p>نقل من وإلى المطار وخدمات تنقل داخلية مجانية</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>خدمات الاسترخاء</h3>
+                    <p>جلسات يوغا، تأمل، وعلاجات استرخاء متخصصة</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>متابعة بعد العلاج</h3>
+                    <p>برامج متابعة وتوجيه بعد انتهاء فترة العلاج في المصح</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="clinic-cta">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge" style="background: rgba(255,255,255,0.2); color: white;">احجز الآن</div>
+                <h2 class="section-title">عش تجربة <span>بيتهوفن العلاجية</span></h2>
+                <p class="section-desc" style="color: rgba(255,255,255,0.9);">مع تاريخ يمتد لعقود وعلاجات متطورة، نحن هنا لمساعدتك على استعادة صحتك</p>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="https://wa.me/420608466666?text=مرحباً، أرغب في حجز برنامج علاجي في مصحة بيتهوفن" class="btn btn-primary" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    تواصل عبر واتساب
+                </a>
+                <a href="tel:+420608466666" class="btn btn-gold">
+                    <i class="fas fa-phone"></i>
+                    اتصل بنا الآن
+                </a>
+                <a href="mailto:Js.evropa@seznam.cz?subject=استفسار عن مصحة بيتهوفن" class="btn btn-outline" style="background:transparent; color:white; border-color:white;">
+                    <i class="fas fa-envelope"></i>
+                    راسلنا بالبريد
+                </a>
+            </div>
+
+            <div class="contact-info-cards">
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h4>هاتف مباشر</h4>
+                    <p>+420 608 466 666</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <h4>واتساب</h4>
+                    <p>+420 608 466 666</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h4>البريد الإلكتروني</h4>
+                    <p>Js.evropa@seznam.cz</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-clock"></i>
+                    <h4>خدمات 24/7</h4>
+                    <p>طاقم طبي متاح دائماً</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img class="footer-logo-img" src="1000038901.jpg" alt="مركز فهد القرني">
+                        <div class="footer-logo-text">
+                            <h3>فهد القرني</h3>
+                            <p>لخدمات العلاجية والسياحية في التشيك</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <a href="index.html#home">الصفحة الرئيسية</a>
+                    <a href="index.html#about">عن فهد القرني</a>
+                    <a href="index.html#clinics">مصحات العلاج</a>
+                    <a href="index.html#faq">سؤال وجواب</a>
+                    <a href="index.html#contact">الاتصال</a>
+                </div>
+
+                <div class="footer-links">
+                    <h4>مصحة بيتهوفن</h4>
+                    <a href="#accommodation">السكن والإقامة</a>
+                    <a href="#treatments">طرق العلاج</a>
+                    <a href="#water-therapy">المياه المعدنية</a>
+                    <a href="#restaurant">المطعم والطعام</a>
+                    <a href="#pricing">الأسعار</a>
+                    <a href="#contact">الحجز والاستفسار</a>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>معلومات تاريخية</h4>
+                    <p style="color: rgba(255,255,255,0.7); margin-bottom: 1rem;">
+                        <i class="fas fa-music" style="margin-left: 0.5rem;"></i>
+                        مكان عالَج فيه بيتهوفن نفسه
+                    </p>
+                    <p style="color: rgba(255,255,255,0.7);">
+                        <i class="fas fa-star" style="margin-left: 0.5rem;"></i>
+                        واحدة من أعرق المصحات التشيكية
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2024 مصحة بيتهوفن - مركز فهد القرني للعلاج الطبيعي في التشيك. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/420608466666?text=مرحباً، أرغب في الاستفسار عن مصحة بيتهوفن" target="_blank" class="whatsapp-btn" aria-label="تواصل عبر واتساب">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Scroll to Top -->
+    <div class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const navLinks = document.querySelectorAll('#nav a, .mobile-menu a');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            const icon = menuToggle.querySelector('i');
+            icon.className = mobileMenu.classList.contains('active') ? 'fas fa-times' : 'fas fa-bars';
+        });
+
+        // Header Scroll Effects
+        const header = document.getElementById('header');
+        let lastScrollTop = 0;
+        let scrollTimeout;
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                header.classList.add('hidden');
+            } else {
+                header.classList.remove('hidden');
+            }
+            
+            lastScrollTop = scrollTop;
+            
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(() => {
+                header.classList.remove('hidden');
+            }, 500);
+        });
+
+        // Active Navigation Link
+        function setActiveLink() {
+            const sections = document.querySelectorAll('section');
+            const scrollPos = window.pageYOffset + 100;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                const sectionId = section.getAttribute('id');
+
+                if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+
+        window.addEventListener('scroll', setActiveLink);
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    navLinks.forEach(link => link.classList.remove('active'));
+                    this.classList.add('active');
+
+                    mobileMenu.classList.remove('active');
+                    menuToggle.querySelector('i').className = 'fas fa-bars';
+
+                    window.scrollTo({
+                        top: target.offsetTop - 90,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!menuToggle.contains(e.target) && !mobileMenu.contains(e.target) && mobileMenu.classList.contains('active')) {
+                mobileMenu.classList.remove('active');
+                menuToggle.querySelector('i').className = 'fas fa-bars';
+            }
+        });
+
+        // Scroll to Top Button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Animate cards on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe cards for animation
+        document.querySelectorAll('.treatment-card, .service-card, .water-benefit').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+
+        // Music notes animation
+        const musicNotes = document.querySelectorAll('.music-note');
+        musicNotes.forEach((note, index) => {
+            note.style.animationDelay = `${index * 4}s`;
+        });
+    </script>
+</body>
+</html>
