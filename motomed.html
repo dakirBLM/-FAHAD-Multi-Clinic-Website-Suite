@@ -1,0 +1,1937 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>التحريك الذكي الآلي للأطراف Motomed | مركز فهد القرني</title>
+    <meta name="description" content="جهاز Motomed - التحريك الذكي الآلي للأطراف، جهاز ذكي مزود بحساسات إلكترونية لإعادة التأهيل العصبي الحركي في التشيك | مركز فهد القرني">
+    <meta name="keywords" content="موتوميد, Motomed, التحريك الذكي, إعادة التأهيل, الشلل النصفي, التصلب المتعدد, السكتة الدماغية, فهد القرني, التشيك">
+    <meta name="author" content="مركز فهد القرني">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="جهاز Motomed - التحريك الذكي الآلي للأطراف | مركز فهد القرني">
+    <meta property="og:description" content="جهاز ذكي مزود بحساسات إلكترونية لإعادة التأهيل العصبي الحركي">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="1000038899.png">
+    <link rel="apple-touch-icon" href="1000038899.png">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://fahadcz.com/motomed.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1E88C7;
+            --primary-dark: #0D6CA3;
+            --primary-light: #E8F4FD;
+            --secondary: #17a71e;
+            --accent: #00ddff;
+            --accent-light: #FFF8E6;
+            --dark: #1A1A1A;
+            --dark-gray: #424242;
+            --gray: #757575;
+            --light-gray: #F5F5F5;
+            --light: #FFFFFF;
+            --border: rgba(0, 0, 0, 0.08);
+            --shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            --shadow-hover: 0 15px 40px rgba(0, 0, 0, 0.12);
+            --glass-bg: rgba(255, 255, 255, 0.95);
+            --glass-border: rgba(255, 255, 255, 0.2);
+            --motomed-blue: #1a5fa8;
+            --motomed-cyan: #00b4d8;
+            --motomed-light: #E3F2FD;
+            --motomed-glow: rgba(0, 180, 216, 0.3);
+        }
+
+        html { scroll-behavior: smooth; font-size: 16px; }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            line-height: 1.8;
+            color: var(--dark);
+            background: var(--light);
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* ── Header ── */
+        header {
+            position: fixed;
+            top: 0.75rem;
+            left: 0.75rem;
+            right: 0.75rem;
+            z-index: 1000;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 0.5rem 1rem;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            min-height: 70px;
+            display: flex;
+            align-items: center;
+        }
+
+        header.hidden { transform: translateY(-120%); }
+
+        header.scrolled {
+            top: 0.5rem;
+            left: 0.5rem;
+            right: 0.5rem;
+            border-radius: 16px;
+            padding: 0.4rem 0.8rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            position: relative;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            flex-shrink: 0;
+            z-index: 1001;
+        }
+
+        .logo-img {
+            height: 50px;
+            width: 50px;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+
+        .logo-text h1 { font-size: 0.95rem; color: var(--dark); font-weight: 800; line-height: 1.2; }
+        .logo-text p  { color: var(--gray); font-size: 0.75rem; line-height: 1.2; }
+
+        nav {
+            display: flex;
+            gap: 0.25rem;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 0.25rem;
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        nav a {
+            padding: 0.6rem 0.95rem;
+            color: var(--dark-gray);
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            font-size: 0.875rem;
+            white-space: nowrap;
+        }
+
+        nav a:hover, nav a.active {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            box-shadow: 0 6px 15px rgba(13,108,163,0.2);
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-family: 'Cairo', sans-serif;
+            font-size: 0.875rem;
+            white-space: nowrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            box-shadow: 0 4px 15px rgba(30, 136, 199, 0.2);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(30, 137, 199, 0.5);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .btn-motomed {
+            background: linear-gradient(135deg, var(--motomed-blue), var(--motomed-cyan));
+            color: white;
+            box-shadow: 0 4px 15px var(--motomed-glow);
+        }
+
+        .btn-motomed:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px var(--motomed-glow);
+        }
+
+        .menu-toggle {
+            display: none;
+            width: 44px;
+            height: 44px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            border: none;
+            border-radius: 14px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .menu-toggle:hover { transform: rotate(90deg); }
+
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            left: 0;
+            background: var(--glass-bg);
+            backdrop-filter: blur(30px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            margin-top: 0.75rem;
+            padding: 1rem;
+            z-index: 1000;
+        }
+
+        .mobile-menu.active {
+            display: block;
+            animation: slideDown 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .mobile-menu a {
+            display: block;
+            padding: 1rem 1.25rem;
+            color: var(--dark);
+            text-decoration: none;
+            border-radius: 14px;
+            margin: 0.25rem 0;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .mobile-menu a:hover, .mobile-menu a.active {
+            background: var(--primary-light);
+            color: var(--primary);
+            transform: translateX(-5px);
+        }
+
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-10px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ── Hero Section ── */
+        .hero-section {
+            position: relative;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            padding: 8rem 0 5rem;
+            overflow: hidden;
+            background: linear-gradient(135deg, #0a0f2e 0%, #0d2a5e 50%, #0a3d6b 100%);
+        }
+
+        /* Animated tech grid background */
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(0, 180, 216, 0.06) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 180, 216, 0.06) 1px, transparent 1px);
+            background-size: 60px 60px;
+            animation: gridPan 20s linear infinite;
+        }
+
+        @keyframes gridPan {
+            0%   { background-position: 0 0; }
+            100% { background-position: 60px 60px; }
+        }
+
+        /* Floating orbs */
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.25;
+            pointer-events: none;
+        }
+
+        .orb-1 {
+            width: 500px; height: 500px;
+            background: radial-gradient(circle, var(--motomed-cyan), transparent 70%);
+            top: -100px; right: -100px;
+            animation: orbFloat 12s ease-in-out infinite alternate;
+        }
+
+        .orb-2 {
+            width: 400px; height: 400px;
+            background: radial-gradient(circle, #1a5fa8, transparent 70%);
+            bottom: -100px; left: -100px;
+            animation: orbFloat 16s ease-in-out infinite alternate-reverse;
+        }
+
+        .orb-3 {
+            width: 250px; height: 250px;
+            background: radial-gradient(circle, #6A9BD4, transparent 70%);
+            top: 40%; left: 40%;
+            animation: orbFloat 10s ease-in-out infinite alternate;
+        }
+
+        @keyframes orbFloat {
+            from { transform: translate(0, 0) scale(1); }
+            to   { transform: translate(40px, 30px) scale(1.08); }
+        }
+
+        /* Floating particles */
+        .particles {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .particle {
+            position: absolute;
+            width: 4px; height: 4px;
+            border-radius: 50%;
+            background: var(--motomed-cyan);
+            opacity: 0;
+            animation: particleRise 8s linear infinite;
+        }
+
+        .particle:nth-child(1)  { left: 10%; animation-delay: 0s;   animation-duration: 7s; }
+        .particle:nth-child(2)  { left: 20%; animation-delay: 1.5s; animation-duration: 9s; }
+        .particle:nth-child(3)  { left: 33%; animation-delay: 0.5s; animation-duration: 8s; }
+        .particle:nth-child(4)  { left: 47%; animation-delay: 2s;   animation-duration: 6s; }
+        .particle:nth-child(5)  { left: 60%; animation-delay: 3s;   animation-duration: 10s; }
+        .particle:nth-child(6)  { left: 74%; animation-delay: 1s;   animation-duration: 7.5s; }
+        .particle:nth-child(7)  { left: 85%; animation-delay: 4s;   animation-duration: 8.5s; }
+        .particle:nth-child(8)  { left: 92%; animation-delay: 2.5s; animation-duration: 6.5s; }
+
+        @keyframes particleRise {
+            0%   { transform: translateY(110vh) scale(1);   opacity: 0; }
+            10%  { opacity: 0.8; }
+            90%  { opacity: 0.6; }
+            100% { transform: translateY(-10vh) scale(0.5); opacity: 0; }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(0, 180, 216, 0.15);
+            color: var(--motomed-cyan);
+            padding: 0.5rem 1.25rem;
+            border-radius: 50px;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            border: 1px solid rgba(0, 180, 216, 0.3);
+            backdrop-filter: blur(10px);
+            font-size: 0.9rem;
+        }
+
+        .hero-title {
+            font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+            font-weight: 900;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-title .highlight {
+            background: linear-gradient(135deg, var(--motomed-cyan) 0%, #90e0ef 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-desc {
+            font-size: 1.15rem;
+            color: rgba(255, 255, 255, 0.85);
+            line-height: 1.9;
+            margin-bottom: 2rem;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        /* Stats box */
+        .hero-stats-box {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(0, 180, 216, 0.2);
+            border-radius: 24px;
+            padding: 2.5rem;
+            backdrop-filter: blur(15px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-stats-box::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(0, 180, 216, 0.08), rgba(26, 95, 168, 0.08));
+            pointer-events: none;
+        }
+
+        .motomed-icon-display {
+            font-size: 5rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            animation: iconPulse 3s ease-in-out infinite;
+        }
+
+        @keyframes iconPulse {
+            0%, 100% { transform: scale(1);    filter: drop-shadow(0 0 10px rgba(0,180,216,0.4)); }
+            50%       { transform: scale(1.08); filter: drop-shadow(0 0 25px rgba(0,180,216,0.8)); }
+        }
+
+        .stats-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .stats-list li {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.95rem;
+        }
+
+        .stats-list li i {
+            color: var(--motomed-cyan);
+            font-size: 1.1rem;
+            flex-shrink: 0;
+            width: 20px;
+        }
+
+        /* ── Section commons ── */
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-badge {
+            display: inline-block;
+            background: var(--primary-light);
+            color: var(--primary);
+            padding: 0.5rem 1.25rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .section-badge.motomed {
+            background: var(--motomed-light);
+            color: var(--motomed-blue);
+        }
+
+        .section-title {
+            font-size: clamp(1.75rem, 4vw, 2.75rem);
+            margin-bottom: 1.25rem;
+            line-height: 1.2;
+            color: var(--dark);
+            font-weight: 800;
+        }
+
+        .section-title span {
+            background: linear-gradient(135deg, var(--motomed-blue), var(--motomed-cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-desc {
+            font-size: 1.1rem;
+            color: var(--dark-gray);
+            max-width: 52rem;
+            margin: 0 auto;
+            line-height: 1.9;
+        }
+
+        /* ── About Section ── */
+        .about-section {
+            padding: 6rem 0;
+            background: linear-gradient(135deg, var(--light-gray) 0%, var(--light) 100%);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-top: 3rem;
+        }
+
+        .about-text h3 {
+            font-size: 1.75rem;
+            color: var(--motomed-blue);
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        .about-text p {
+            color: var(--dark-gray);
+            line-height: 1.9;
+            margin-bottom: 1.25rem;
+            font-size: 1.05rem;
+        }
+
+        .about-highlight {
+            background: linear-gradient(135deg, var(--motomed-light), #e8f7fc);
+            border-right: 4px solid var(--motomed-cyan);
+            border-radius: 0 12px 12px 0;
+            padding: 1.25rem 1.5rem;
+            margin: 1.5rem 0;
+            color: var(--motomed-blue);
+            font-weight: 600;
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        .about-image-stack {
+            position: relative;
+            height: 420px;
+        }
+
+        .about-img-main {
+            position: absolute;
+            top: 0; right: 0;
+            width: 80%;
+            height: 75%;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+        }
+
+        .about-img-accent {
+            position: absolute;
+            bottom: 0; left: 0;
+            width: 55%;
+            height: 50%;
+            object-fit: cover;
+            border-radius: 16px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+            border: 4px solid white;
+        }
+
+        .about-badge-float {
+            position: absolute;
+            bottom: 30%;
+            right: -10px;
+            background: linear-gradient(135deg, var(--motomed-blue), var(--motomed-cyan));
+            color: white;
+            padding: 0.75rem 1.25rem;
+            border-radius: 14px;
+            font-weight: 700;
+            font-size: 0.875rem;
+            box-shadow: 0 8px 25px var(--motomed-glow);
+            animation: floatBadge 4s ease-in-out infinite alternate;
+        }
+
+        @keyframes floatBadge {
+            from { transform: translateY(0); }
+            to   { transform: translateY(-10px); }
+        }
+
+        /* ── 4-Photo Gallery ── */
+        .gallery-section {
+            padding: 6rem 0;
+            background: var(--light);
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 300px;
+            gap: 1.25rem;
+            margin-top: 3rem;
+        }
+
+        .photo-card {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            cursor: pointer;
+            group: true;
+        }
+
+        /* No spanning – clean 2×2 equal grid */
+        .photo-card.featured {
+            grid-row: auto;
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            display: block;
+        }
+
+        .photo-card:hover img {
+            transform: scale(1.07);
+        }
+
+        .photo-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top,
+                rgba(10, 15, 46, 0.9) 0%,
+                rgba(10, 15, 46, 0.3) 50%,
+                transparent 100%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            display: flex;
+            align-items: flex-end;
+            padding: 1.75rem;
+        }
+
+        .photo-card:hover .photo-overlay {
+            opacity: 1;
+        }
+
+        .photo-info {
+            transform: translateY(15px);
+            transition: transform 0.4s ease;
+            color: white;
+        }
+
+        .photo-card:hover .photo-info {
+            transform: translateY(0);
+        }
+
+        .photo-info h4 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.35rem;
+        }
+
+        .photo-info p {
+            font-size: 0.875rem;
+            opacity: 0.85;
+            line-height: 1.5;
+        }
+
+        .photo-tag {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(0, 180, 216, 0.9);
+            color: white;
+            padding: 0.3rem 0.85rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Shimmer loading effect */
+        .photo-card::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(110deg, transparent 30%, rgba(255,255,255,0.08) 50%, transparent 70%);
+            transform: translateX(-100%);
+            animation: shimmer 3s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        .photo-card:hover::after {
+            animation: none;
+        }
+
+        @keyframes shimmer {
+            0%   { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        /* ── Cases Section ── */
+        .cases-section {
+            padding: 6rem 0;
+            background: linear-gradient(135deg, #0a0f2e 0%, #0d2a5e 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cases-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(0, 180, 216, 0.04) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 180, 216, 0.04) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+
+        .cases-section .section-title {
+            color: white;
+        }
+
+        .cases-section .section-desc {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .cases-intro {
+            text-align: center;
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.85);
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            line-height: 1.9;
+        }
+
+        .cases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.25rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .case-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(0, 180, 216, 0.2);
+            border-radius: 20px;
+            padding: 1.75rem;
+            transition: all 0.4s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .case-card:hover {
+            background: rgba(0, 180, 216, 0.1);
+            border-color: rgba(0, 180, 216, 0.5);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 180, 216, 0.15);
+        }
+
+        .case-icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, var(--motomed-blue), var(--motomed-cyan));
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .case-card:hover .case-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .case-card h4 {
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .case-card p {
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* ── Benefits Section ── */
+        .benefits-section {
+            padding: 6rem 0;
+            background: var(--light-gray);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.75rem;
+            margin-top: 3rem;
+        }
+
+        .benefit-card {
+            background: var(--light);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.4s ease;
+            box-shadow: var(--shadow);
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .benefit-card::before {
+            content: '';
+            position: absolute;
+            top: 0; right: 0; left: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--motomed-blue), var(--motomed-cyan));
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+            transform-origin: left;
+        }
+
+        .benefit-card:hover::before { transform: scaleX(1); }
+
+        .benefit-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--motomed-light);
+        }
+
+        .benefit-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--motomed-light), #d0eef8);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            transition: all 0.4s ease;
+            font-size: 2rem;
+            color: var(--motomed-blue);
+        }
+
+        .benefit-card:hover .benefit-icon {
+            background: linear-gradient(135deg, var(--motomed-blue), var(--motomed-cyan));
+            transform: scale(1.1) rotate(10deg);
+            color: white;
+        }
+
+        .benefit-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.75rem;
+            color: var(--dark);
+            font-weight: 700;
+        }
+
+        .benefit-card p {
+            color: var(--gray);
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        /* Number badge on benefit cards */
+        .benefit-number {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, var(--motomed-blue), var(--motomed-cyan));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        /* ── CTA Section ── */
+        .cta-section {
+            padding: 6rem 0;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::after {
+            content: '';
+            position: absolute;
+            width: 600px; height: 600px;
+            border-radius: 50%;
+            border: 1px solid rgba(255,255,255,0.05);
+            top: -200px; right: -200px;
+        }
+
+        .cta-section .section-title { color: white; }
+        .cta-section .section-title span {
+            background: linear-gradient(135deg, #90e0ef, var(--motomed-cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .cta-desc {
+            color: rgba(255,255,255,0.88);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            line-height: 1.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-section .btn-white {
+            background: white;
+            color: var(--primary);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        .cta-section .btn-white:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.3);
+        }
+
+        .cta-section .btn-ghost {
+            background: transparent;
+            color: white;
+            border: 2px solid rgba(255,255,255,0.5);
+        }
+
+        .cta-section .btn-ghost:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: white;
+        }
+
+        .contact-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.25rem;
+            margin-top: 4rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .contact-card {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 16px;
+            padding: 1.75rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .contact-card:hover {
+            background: rgba(255,255,255,0.15);
+            transform: translateY(-5px);
+        }
+
+        .contact-card i { font-size: 2rem; margin-bottom: 0.75rem; display: block; }
+        .contact-card .label { font-size: 0.8rem; opacity: 0.75; margin-bottom: 0.4rem; }
+        .contact-card .value { font-weight: 700; font-size: 0.95rem; }
+
+        /* ── Footer ── */
+        footer {
+            background: linear-gradient(rgba(0,0,0,0.88), rgba(0,0,0,0.92));
+            color: white;
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-logo-img { height: 50px; width: auto; border-radius: 10px; }
+        .footer-logo { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+        .footer-logo-text h3 { font-size: 1.1rem; color: white; font-weight: 700; }
+        .footer-logo-text p  { color: rgba(255,255,255,0.6); font-size: 0.8rem; }
+        .footer-about { color: rgba(255,255,255,0.75); font-size: 0.875rem; line-height: 1.8; }
+
+        .social-links { display: flex; gap: 0.5rem; margin-top: 1.25rem; }
+        .social-link {
+            width: 40px; height: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+            color: white; text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .social-link:hover { background: var(--primary); transform: translateY(-3px); }
+
+        .footer-links h4 { margin-bottom: 1rem; font-size: 1rem; color: white; font-weight: 700; }
+        .footer-links ul { list-style: none; }
+        .footer-links li { margin-bottom: 0.5rem; }
+        .footer-links a {
+            color: rgba(255,255,255,0.65);
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: all 0.3s ease;
+            display: block;
+        }
+        .footer-links a:hover { color: white; transform: translateX(-5px); }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 1.5rem;
+            text-align: center;
+            color: rgba(255,255,255,0.45);
+            font-size: 0.8125rem;
+        }
+
+        /* ── WhatsApp & Scroll ── */
+        .whatsapp-float { position: fixed; bottom: 1.5rem; left: 1.5rem; z-index: 999; }
+        .whatsapp-btn {
+            width: 56px; height: 56px;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            border-radius: 16px;
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 8px 25px rgba(37,211,102,0.3);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        .whatsapp-btn:hover { transform: scale(1.1) rotate(5deg); box-shadow: 0 12px 35px rgba(37,211,102,0.5); }
+        .whatsapp-btn i { font-size: 1.5rem; color: white; }
+
+        .scroll-to-top {
+            position: fixed; bottom: 1.5rem; right: 1.5rem;
+            width: 44px; height: 44px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer; opacity: 0; visibility: hidden;
+            transition: all 0.3s ease; z-index: 998;
+            box-shadow: 0 4px 15px rgba(30,136,199,0.3);
+        }
+        .scroll-to-top.show { opacity: 1; visibility: visible; }
+        .scroll-to-top:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(30,136,199,0.5); }
+        .scroll-to-top i { color: white; font-size: 1.1rem; }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1);    box-shadow: 0 8px 25px rgba(37,211,102,0.3); }
+            50%       { transform: scale(1.05); box-shadow: 0 12px 30px rgba(37,211,102,0.5); }
+        }
+
+        /* ── Lightbox ── */
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background: rgba(5, 10, 30, 0.92);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.35s ease, visibility 0.35s ease;
+            backdrop-filter: blur(8px);
+            padding: 1rem;
+        }
+
+        .lightbox.open {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .lightbox-img-wrap {
+            position: relative;
+            max-width: min(90vw, 1100px);
+            max-height: 90vh;
+            transform: scale(0.85);
+            transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .lightbox.open .lightbox-img-wrap {
+            transform: scale(1);
+        }
+
+        .lightbox-img {
+            display: block;
+            max-width: 100%;
+            max-height: 85vh;
+            border-radius: 16px;
+            box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+            object-fit: contain;
+        }
+
+        .lightbox-close {
+            position: fixed;
+            top: 1.25rem;
+            right: 1.25rem;
+            width: 46px;
+            height: 46px;
+            background: rgba(255,255,255,0.12);
+            border: 2px solid rgba(255,255,255,0.25);
+            border-radius: 50%;
+            color: white;
+            font-size: 1.3rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.25s ease;
+            backdrop-filter: blur(6px);
+        }
+
+        .lightbox-close:hover {
+            background: rgba(255,255,255,0.25);
+            transform: rotate(90deg);
+        }
+
+        .lightbox-nav {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            background: rgba(255,255,255,0.1);
+            border: 2px solid rgba(255,255,255,0.2);
+            border-radius: 50%;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.25s ease;
+            backdrop-filter: blur(6px);
+        }
+
+        .lightbox-nav:hover {
+            background: rgba(0,180,216,0.35);
+            border-color: var(--motomed-cyan);
+        }
+
+        .lightbox-prev { left: 1rem; }
+        .lightbox-next { right: 1rem; }
+
+        .lightbox-counter {
+            position: fixed;
+            bottom: 1.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgba(255,255,255,0.7);
+            font-size: 0.875rem;
+            font-family: 'Cairo', sans-serif;
+            letter-spacing: 0.05em;
+        }
+
+        @media (max-width: 768px) {
+            .lightbox-nav { width: 40px; height: 40px; font-size: 1rem; }
+            .lightbox-prev { left: 0.4rem; }
+            .lightbox-next { right: 0.4rem; }
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 1024px) {
+            .hero-grid { grid-template-columns: 1fr; gap: 3rem; }
+            .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .about-image-stack { height: 320px; }
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 0 1rem; }
+
+            header {
+                left: 0.5rem; right: 0.5rem; top: 0.5rem;
+                padding: 0.4rem 0.6rem; min-height: 60px;
+            }
+
+            nav { display: none; }
+            .menu-toggle { display: flex; }
+            .mobile-menu.active { display: block; }
+
+            /* Reduce section padding on mobile */
+            .about-section,
+            .gallery-section,
+            .cases-section,
+            .benefits-section,
+            .cta-section { padding: 3.5rem 0; }
+
+            /* Hero */
+            .hero-section { min-height: auto; padding: 6rem 0 3rem; }
+            .hero-title { font-size: 1.85rem; }
+            .hero-desc { font-size: 1rem; }
+            .hero-actions { flex-direction: column; }
+            .hero-actions .btn { width: 100%; justify-content: center; }
+            .hero-stats-box { padding: 1.5rem; }
+            .motomed-icon-display { font-size: 3.5rem; margin-bottom: 1rem; }
+            .stats-list li { font-size: 0.9rem; }
+
+            /* About image stack – simplify absolute layout */
+            .about-image-stack {
+                height: 240px;
+            }
+            .about-img-main {
+                width: 90%;
+                height: 100%;
+            }
+            .about-img-accent {
+                display: none;
+            }
+            .about-badge-float {
+                right: 0.5rem;
+                bottom: 0.75rem;
+                font-size: 0.8rem;
+                padding: 0.5rem 0.9rem;
+            }
+
+            /* Gallery */
+            .photo-grid {
+                grid-template-columns: 1fr;
+                grid-auto-rows: 250px;
+            }
+            .photo-card.featured { grid-row: auto; }
+
+            /* Cards */
+            .cases-grid { grid-template-columns: 1fr; }
+            .benefits-grid { grid-template-columns: 1fr; }
+            .case-card, .benefit-card { padding: 1.25rem; }
+
+            /* CTA */
+            .cta-buttons { flex-direction: column; }
+            .cta-buttons .btn { width: 100%; justify-content: center; }
+            .contact-cards { grid-template-columns: repeat(2, 1fr); }
+
+            /* Footer */
+            .footer-grid { grid-template-columns: 1fr; }
+
+            /* Header action button hidden on mobile */
+            .header-content .btn-primary { display: none; }
+
+            /* Section header */
+            .section-title { font-size: 1.6rem; }
+            .section-desc { font-size: 0.95rem; }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title { font-size: 1.6rem; }
+            .contact-cards { grid-template-columns: 1fr; }
+            .about-image-stack { height: 200px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img class="logo-img" src="1000038899.png" alt="مركز فهد القرني">
+                    <div class="logo-text">
+                        <h1>فهد القرني</h1>
+                        <p>العلاج الطبيعي في التشيك</p>
+                    </div>
+                </div>
+
+                <nav id="nav">
+                    <a href="index.html#home">الصفحة الرئيسية</a>
+                    <a href="index.html#services">خدماتنا</a>
+                    <a href="index.html#clinics">مصحات العلاج</a>
+                    <a href="index.html#contact">الاتصال</a>
+                </nav>
+
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-calendar-check"></i>
+                    احجز استشارة
+                </a>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="index.html#home">الصفحة الرئيسية</a>
+                <a href="index.html#services">خدماتنا</a>
+                <a href="index.html#clinics">مصحات العلاج</a>
+                <a href="index.html#contact">الاتصال</a>
+                <a href="#contact" class="btn btn-primary" style="margin: 1rem 0 0; width: 100%;">
+                    <i class="fas fa-calendar-check"></i>
+                    احجز استشارة
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero-section" id="home">
+        <!-- Animated background elements -->
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-grid">
+                    <!-- Left: text -->
+                    <div>
+                        <div class="hero-badge">
+                            <i class="fas fa-robot"></i>
+                            <span>تقنية طبية ذكية متقدمة</span>
+                        </div>
+                        <h1 class="hero-title">
+                            التحريك الذكي<br>
+                            الآلي للأطراف<br>
+                            <span class="highlight">Motomed</span>
+                        </h1>
+                        <p class="hero-desc">
+                            جهاز ذكي مزود بحساسات إلكترونية تلتقط الإشارات من المفاصل، حيث يمكن للجهاز استشعار حركة المريض وتحديد حاجته للمساعدة أو المقاومة بدقة فائقة.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="#contact" class="btn btn-motomed">
+                                <i class="fas fa-calendar-alt"></i>
+                                احجز استشارة متخصصة
+                            </a>
+                            <a href="#about" class="btn btn-outline" style="border-color: rgba(255,255,255,0.4); color: white;">
+                                <i class="fas fa-info-circle"></i>
+                                اعرف أكثر
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right: stats box -->
+                    <div class="hero-stats-box">
+                        <div class="motomed-icon-display">🦾</div>
+                        <ul class="stats-list">
+                            <li>
+                                <i class="fas fa-microchip"></i>
+                                حساسات إلكترونية تلتقط إشارات المفاصل آنياً
+                            </li>
+                            <li>
+                                <i class="fas fa-globe"></i>
+                                مستخدَم في برامج التأهيل العصبي حول العالم
+                            </li>
+                            <li>
+                                <i class="fas fa-brain"></i>
+                                يحسن التوصيل العصبي العضلي بفاعلية مثبتة
+                            </li>
+                            <li>
+                                <i class="fas fa-sliders-h"></i>
+                                يضبط المساعدة أو المقاومة تلقائياً حسب الحالة
+                            </li>
+                            <li>
+                                <i class="fas fa-child"></i>
+                                مناسب للبالغين، كبار السن، والأطفال
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge motomed">جهاز Motomed</div>
+                <h2 class="section-title">ما هو جهاز <span>Motomed</span>؟</h2>
+                <p class="section-desc">
+                    جهاز تأهيلي ذكي يجمع بين التكنولوجيا الإلكترونية المتطورة والعلاج الطبيعي ليُشكّل ركيزة أساسية في برامج إعادة التأهيل العصبي الحديثة.
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>تقنية تُحاكي الإرادة</h3>
+                    <p>
+                        يعمل جهاز Motomed من خلال حساسات إلكترونية دقيقة تلتقط أضعف الإشارات الحركية الصادرة عن مفاصل المريض. فور استشعار أي محاولة للحركة، يبادر الجهاز إلى دعمها وإكمالها بالمقدار المناسب، مما يُعزز التوصيل العصبي ويحفّز العضلات على الاستجابة التدريجية.
+                    </p>
+                    <div class="about-highlight">
+                        يُستخدم جهاز Motomed ضمن برامج إعادة التأهيل العصبي في جميع أنحاء العالم، وذلك لأهميته الفائقة في تحسين حالة المريض وتسريع مسار الشفاء.
+                    </div>
+                    <p>
+                        يتميز الجهاز بقدرته على التعامل مع كل مريض بشكل شخصي؛ فهو يمكن ضبطه ليقدِّم مساعدة نشطة عند الضعف الشديد، أو مقاومة تدريبية عند تحسن الحالة، مما يجعله رفيقاً طوال رحلة التعافي.
+                    </p>
+                </div>
+
+                <div class="about-image-stack">
+                    <img
+                        class="about-img-main"
+                        src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="جهاز Motomed للتأهيل الحركي"
+                    >
+                    <img
+                        class="about-img-accent"
+                        src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="إعادة التأهيل العصبي"
+                    >
+                    <div class="about-badge-float">
+                        <i class="fas fa-robot" style="margin-left:0.4rem;"></i>
+                        إعادة التأهيل الذكي
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===== GALLERY SECTION ===== -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge motomed">معرض الصور</div>
+                <h2 class="section-title">جهاز Motomed <span>في العمل</span></h2>
+                <p class="section-desc">لقطات من جلسات إعادة التأهيل بتقنية Motomed في أحدث المرافق الطبية</p>
+            </div>
+
+            <div class="photo-grid">
+
+                <!-- Photo 1 – featured (spans 2 rows) -->
+                <div class="photo-card featured">
+                    <img
+                        src="1000027066.jpg"
+                        alt="جلسة تأهيل حركي بجهاز Motomed"
+                        loading="lazy"
+                    >
+                    <div class="photo-overlay">
+       
+                    </div>
+                </div>
+
+                <!-- Photo 2 -->
+                <div class="photo-card">
+             
+                    <img
+                        src="1000027067.jpg"
+                        alt="التأهيل العصبي بتقنية Motomed"
+                        loading="lazy"
+                    >
+                    <div class="photo-overlay">
+                
+                    </div>
+                </div>
+
+                <!-- Photo 3 -->
+                <div class="photo-card">
+            
+                    <img
+                        src="1000039653.jpg"
+                        alt="رعاية المريض أثناء جلسة Motomed"
+                        loading="lazy"
+                    >
+                    <div class="photo-overlay">
+      
+                    </div>
+                </div>
+
+                <!-- Photo 4 -->
+                <div class="photo-card">
+                    <img
+                        src="1000039656.jpg"
+                        alt="برنامج تدريبي مخصص بجهاز Motomed"
+                        loading="lazy"
+                    >
+                    <div class="photo-overlay"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===== CASES SECTION ===== -->
+    <section class="cases-section" id="cases">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge" style="background: rgba(0,180,216,0.15); color: var(--motomed-cyan);">
+                    الحالات المستفيدة
+                </div>
+                <h2 class="section-title">حالات يُعالجها <span>Motomed</span></h2>
+            </div>
+
+            <p class="cases-intro">
+                يُعدّ Motomed جزءاً رئيسياً في برنامج العلاج الطبيعي لطيف واسع من الحالات العصبية والعضلية والعظمية.
+            </p>
+
+            <div class="cases-grid">
+
+                <div class="case-card">
+                    <div class="case-icon"><i class="fas fa-user-injured"></i></div>
+                    <h4>الشلل النصفي والرباعي</h4>
+                    <p>إعادة تفعيل الرسائل العصبية لتحسين القدرة الحركية في الأطراف المصابة</p>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-icon"><i class="fas fa-brain"></i></div>
+                    <h4>التصلب المتعدد</h4>
+                    <p>تحسين التوازن والتنسيق الحركي وتقليل التعب العصبي المصاحب للمرض</p>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-icon"><i class="fas fa-heartbeat"></i></div>
+                    <h4>السكتة الدماغية</h4>
+                    <p>تعزيز إعادة التشكّل العصبي وتسريع استعادة الوظائف الحركية المفقودة</p>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-icon"><i class="fas fa-head-side-virus"></i></div>
+                    <h4>إصابات الدماغ الارتطامية</h4>
+                    <p>التأهيل الحركي التدريجي بعد إصابات الرأس والدماغ الناتجة عن الحوادث</p>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-icon"><i class="fas fa-walking"></i></div>
+                    <h4>ضعف حركة كبار السن</h4>
+                    <p>الحفاظ على الحركة وتقوية العضلات وتحسين الجودة المعيشية لدى المسنّين</p>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-icon"><i class="fas fa-hand-paper"></i></div>
+                    <h4>شلل الرعاش ومرض باركنسون</h4>
+                    <p>تنظيم الحركة وتقليل الارتجاج وتحسين التنسيق الحركي العام</p>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-icon"><i class="fas fa-bone"></i></div>
+                    <h4>إصابات العظام المؤثرة على الأطراف</h4>
+                    <p>تأهيل ما بعد الجراحة والكسور مع الحفاظ على كتلة العضلات وتجنّب ضمورها</p>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-icon"><i class="fas fa-dna"></i></div>
+                    <h4>الاضطرابات العضلية</h4>
+                    <p>إبطاء تراجع القوة العضلية وتحسين الوظيفة الحركية في الأمراض العضلية المزمنة</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===== BENEFITS SECTION ===== -->
+    <section class="benefits-section" id="benefits">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge motomed">فوائد الجهاز</div>
+                <h2 class="section-title">لماذا تختار <span>Motomed</span>؟</h2>
+                <p class="section-desc">فوائد علمية مثبتة تجعل Motomed الخيار الأول في برامج التأهيل العصبي والحركي حول العالم</p>
+            </div>
+
+            <div class="benefits-grid">
+
+                <div class="benefit-card">
+                    <div class="benefit-number">1</div>
+                    <div class="benefit-icon"><i class="fas fa-shoe-prints"></i></div>
+                    <h3>تشجيع المشي وتحسينه</h3>
+                    <p>يُحفّز الجهاز النمط الحركي الطبيعي للمشي من خلال تكرار الحركة الدورية التي تُعيد تدريب الجهاز العصبي</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">2</div>
+                    <div class="benefit-icon"><i class="fas fa-dumbbell"></i></div>
+                    <h3>تنشيط قوة العضلات</h3>
+                    <p>تحفيز منتظم للألياف العضلية يمنع الضمور ويزيد الكتلة العضلية الوظيفية حتى في حالات الشلل الجزئي</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">3</div>
+                    <div class="benefit-icon"><i class="fas fa-bed"></i></div>
+                    <h3>تقليل تبعات قلة الحركة</h3>
+                    <p>الوقاية من القرح والجلطات الوريدية وهشاشة العظام الناتجة عن طول فترة عدم الحركة</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">4</div>
+                    <div class="benefit-icon"><i class="fas fa-sync-alt"></i></div>
+                    <h3>تحفيز الحركة الطبيعية للأطراف</h3>
+                    <p>محاكاة الحركات الإيقاعية الطبيعية تحفّز الشبكات العصبية النخاعية لاسترجاع أنماط المشي التلقائي</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">5</div>
+                    <div class="benefit-icon"><i class="fas fa-arrows-alt-h"></i></div>
+                    <h3>تقليل التشنج العضلي</h3>
+                    <p>الحركة المنتظمة المتكررة تُرخّي الأعصاب الحركية الزائدة النشاط وتخفف التيبس والتقفع العضلي</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-number">6</div>
+                    <div class="benefit-icon"><i class="fas fa-project-diagram"></i></div>
+                    <h3>التدريب على التناسق العصبي العضلي</h3>
+                    <p>يُعيد بناء قنوات التواصل بين الدماغ والعضلات لاستعادة الدقة والتنسيق في الحركات اليومية</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===== CTA / CONTACT ===== -->
+    <section class="cta-section" id="contact">
+        <div class="container" style="position:relative;z-index:2;">
+            <div class="section-badge" style="background:rgba(255,255,255,0.15);color:white;margin-bottom:1.5rem;">
+                تواصل معنا
+            </div>
+            <h2 class="section-title">
+                ابدأ رحلة التعافي مع
+                <span>Motomed</span>
+            </h2>
+            <p class="cta-desc">
+                تواصل معنا الآن لمعرفة تفاصيل برامج التأهيل بجهاز Motomed في التشيك والحصول على استشارة مجانية متخصصة.
+            </p>
+
+            <div class="cta-buttons">
+                <a href="https://wa.me/420608466666?text=مرحباً، أرغب في الاستفسار عن برنامج التأهيل بجهاز Motomed"
+                   target="_blank" class="btn btn-white" style="background:white;color:var(--primary);display:inline-flex;">
+                    <i class="fab fa-whatsapp"></i>
+                    تواصل عبر واتساب
+                </a>
+                <a href="index.html#contact" class="btn btn-ghost" style="display:inline-flex;">
+                    <i class="fas fa-paper-plane"></i>
+                    أرسل استفسارك
+                </a>
+                <a href="tel:+420608466666" class="btn btn-motomed" style="display:inline-flex;">
+                    <i class="fas fa-phone"></i>
+                    اتصل بنا مباشرة
+                </a>
+            </div>
+
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <div class="label">هاتف</div>
+                    <div class="value">+420 608 466 666</div>
+                </div>
+                <div class="contact-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <div class="label">واتساب</div>
+                    <div class="value">+420 608 466 666</div>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <div class="label">بريد إلكتروني</div>
+                    <div class="value">Js.evropa@seznam.cz</div>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-globe"></i>
+                    <div class="label">الموقع</div>
+                    <div class="value">fahadcz.com</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">
+                        <img class="footer-logo-img" src="1000038901.jpg" alt="مركز فهد القرني">
+                        <div class="footer-logo-text">
+                            <h3>فهد القرني</h3>
+                            <p>لخدمات العلاجية والسياحية في التشيك</p>
+                        </div>
+                    </div>
+                    <p class="footer-about">
+                        FAHAD ALQARNI<br>
+                        MEDICAL & TOURISM SERVICES IN CZECH REPUBLIC
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="انستغرام"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="يوتيوب"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html#home">الصفحة الرئيسية</a></li>
+                        <li><a href="index.html#services">خدماتنا العلاجية</a></li>
+                        <li><a href="index.html#clinics">مصحاتنا الشريكة</a></li>
+                        <li><a href="index.html#contact">التواصل والحجز</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>مصحاتنا الشريكة</h4>
+                    <ul>
+                        <li><a href="clinic-darcov.html">مصحة داركوف</a></li>
+                        <li><a href="clinic-beethoven.html">مصحة بيتهوفن</a></li>
+                        <li><a href="clinic-kaiser.html">مصحة القيصر</a></li>
+                        <li><a href="clinic-arcada.html">مركز أركادا</a></li>
+                        <li><a href="clinic-jachymov.html">مصحة ياخيموف</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>اتصل بنا</h4>
+                    <ul>
+                        <li><a href="tel:+420608466666"><i class="fas fa-phone" style="margin-left:0.35rem;"></i>+420 608 466 666</a></li>
+                        <li><a href="mailto:Js.evropa@seznam.cz"><i class="fas fa-envelope" style="margin-left:0.35rem;"></i>Js.evropa@seznam.cz</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2024 مركز فهد القرني للعلاج الطبيعي والسياحة الطبية في التشيك. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- WhatsApp Float -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/420608466666?text=مرحباً، أرغب في الاستفسار عن جهاز Motomed"
+           target="_blank" class="whatsapp-btn" aria-label="تواصل عبر واتساب">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Scroll to Top -->
+    <div class="scroll-to-top" id="scrollToTop" aria-label="العودة للأعلى">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="عرض الصورة">
+        <button class="lightbox-close" id="lightboxClose" aria-label="إغلاق"><i class="fas fa-times"></i></button>
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="السابق"><i class="fas fa-chevron-right"></i></button>
+        <div class="lightbox-img-wrap">
+            <img class="lightbox-img" id="lightboxImg" src="" alt="">
+        </div>
+        <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="التالي"><i class="fas fa-chevron-left"></i></button>
+        <div class="lightbox-counter" id="lightboxCounter"></div>
+    </div>
+
+
+    <script>
+        // ── Mobile Menu ──
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            const icon = menuToggle.querySelector('i');
+            icon.className = mobileMenu.classList.contains('active') ? 'fas fa-times' : 'fas fa-bars';
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!menuToggle.contains(e.target) && !mobileMenu.contains(e.target) && mobileMenu.classList.contains('active')) {
+                mobileMenu.classList.remove('active');
+                menuToggle.querySelector('i').className = 'fas fa-bars';
+            }
+        });
+
+        // ── Header Scroll Effect ──
+        const header = document.getElementById('header');
+        let lastScrollTop = 0;
+        let scrollTimeout;
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            header.classList.toggle('scrolled', scrollTop > 50);
+            header.classList.toggle('hidden', scrollTop > lastScrollTop && scrollTop > 100);
+
+            lastScrollTop = scrollTop;
+
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(() => header.classList.remove('hidden'), 500);
+        });
+
+        // ── Scroll to Top ──
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', () => {
+            scrollToTopBtn.classList.toggle('show', window.pageYOffset > 300);
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // ── Smooth Scroll for internal links ──
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    mobileMenu.classList.remove('active');
+                    menuToggle.querySelector('i').className = 'fas fa-bars';
+                    window.scrollTo({ top: target.offsetTop - 90, behavior: 'smooth' });
+                }
+            });
+        });
+
+        // ── Intersection Observer – card entrance animations ──
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+        document.querySelectorAll('.case-card, .benefit-card, .photo-card, .feature-card').forEach((card, i) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(28px)';
+            card.style.transition = `opacity 0.55s ease ${i * 0.06}s, transform 0.55s ease ${i * 0.06}s`;
+            observer.observe(card);
+        });
+
+        // ── Stats box entrance ──
+        const statsBox = document.querySelector('.hero-stats-box');
+        if (statsBox) {
+            setTimeout(() => {
+                statsBox.style.opacity = '1';
+                statsBox.style.transform = 'translateY(0)';
+            }, 400);
+            statsBox.style.opacity = '0';
+            statsBox.style.transform = 'translateY(20px)';
+            statsBox.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+        }
+
+        // ── Lightbox ──
+        const lightbox     = document.getElementById('lightbox');
+        const lightboxImg  = document.getElementById('lightboxImg');
+        const lightboxClose = document.getElementById('lightboxClose');
+        const lightboxPrev = document.getElementById('lightboxPrev');
+        const lightboxNext = document.getElementById('lightboxNext');
+        const lightboxCounter = document.getElementById('lightboxCounter');
+
+        // Collect all gallery photos in order
+        const photoCards = Array.from(document.querySelectorAll('.photo-grid .photo-card'));
+        let currentIndex = 0;
+
+        function openLightbox(index) {
+            const img = photoCards[index].querySelector('img');
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+            currentIndex = index;
+            lightboxCounter.textContent = (index + 1) + ' / ' + photoCards.length;
+            lightbox.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        function showPrev() {
+            currentIndex = (currentIndex - 1 + photoCards.length) % photoCards.length;
+            openLightbox(currentIndex);
+        }
+
+        function showNext() {
+            currentIndex = (currentIndex + 1) % photoCards.length;
+            openLightbox(currentIndex);
+        }
+
+        // Attach click to each photo card
+        photoCards.forEach((card, i) => {
+            card.addEventListener('click', () => openLightbox(i));
+        });
+
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightboxPrev.addEventListener('click', showPrev);
+        lightboxNext.addEventListener('click', showNext);
+
+        // Close on backdrop click
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) closeLightbox();
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('open')) return;
+            if (e.key === 'Escape')      closeLightbox();
+            if (e.key === 'ArrowRight') showPrev();
+            if (e.key === 'ArrowLeft')  showNext();
+        });
+
+        // Touch / swipe support
+        let touchStartX = 0;
+        lightbox.addEventListener('touchstart', (e) => { touchStartX = e.touches[0].clientX; }, { passive: true });
+        lightbox.addEventListener('touchend', (e) => {
+            const diff = touchStartX - e.changedTouches[0].clientX;
+            if (Math.abs(diff) > 50) diff > 0 ? showNext() : showPrev();
+        });
+    </script>
+</body>
+</html>
