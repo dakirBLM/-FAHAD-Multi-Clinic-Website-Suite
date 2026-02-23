@@ -4,7 +4,7 @@
 // IMPORTANT: This uses PHP's mail() and requires a properly configured mail transport on the server.
 
 // Destination: send contact form to this address
-$to = 'dakirblm@gmail.com';
+$to = 'Js.evropa@seznam.cz';
 
 /* SMTP configuration — edit these to use Hostinger SMTP
  * Provide the SMTP password below (or set to empty to use PHP mail() fallback).

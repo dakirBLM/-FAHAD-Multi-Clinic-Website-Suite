@@ -81,7 +81,7 @@
             header { left: 0.75rem !important; right: 0.75rem !important; top: 0.75rem !important;
                      border-radius: 20px !important; padding: 0.5rem !important; min-height: 60px !important; }
             .header-content { gap: 2rem !important; }
-            .logo-img { height: 50px !important; width: 50px !important; }
+            .logo-img { height: 60px !important; width: 60px !important; }
             .logo-text h1 { font-size: 0.95rem !important; }
             .logo-text p { font-size: 0.75rem !important; }
             nav { display: none !important; }
@@ -209,7 +209,7 @@
                     </div>
                     <div class="social-links">
                         <a href="https://x.com/evropajs?s=11&t=6wzL0PhnVREVez-e3nH0SQ" class="social-link" aria-label="تويتر X" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i></a>
-                        <a href="https://snapchat.com/t/950m1PLW" class="social-link" aria-label="سناب شات" target="_blank" rel="noopener"><i class="fab fa-snapchat"></i></a>
+                        <a href="https://snapchat.com/t/1H7yxKip" class="social-link" aria-label="سناب شات" target="_blank" rel="noopener"><i class="fab fa-snapchat"></i></a>
                         <a href="https://www.tiktok.com/@motomed2?_r=1&_t=ZS-948sbVEitYT" class="social-link" aria-label="تيك توك" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i></a>
                     </div>
                 </div>
