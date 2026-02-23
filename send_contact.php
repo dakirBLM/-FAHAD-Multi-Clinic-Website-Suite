@@ -3,7 +3,22 @@
 // Basic server-side handler to email contact form submissions with optional attachment.
 // IMPORTANT: This uses PHP's mail() and requires a properly configured mail transport on the server.
 
+// Destination: send contact form to this address
 $to = 'dakirblm@gmail.com';
+
+/* SMTP configuration — edit these to use Hostinger SMTP
+ * Provide the SMTP password below (or set to empty to use PHP mail() fallback).
+ */
+$SMTP_ENABLED = true;
+$SMTP_HOST = 'smtp.hostinger.com';
+$SMTP_PORT = 587;
+$SMTP_USER = 'fahad@fahadqa.com';
+$SMTP_PASS = '200419681969CHsiii@'; // <-- replace with the SMTP password from Hostinger
+$SMTP_SECURE = 'tls'; // 'tls' (STARTTLS) or 'ssl' for implicit TLS
+
+// Sender address shown in emails
+$fromEmail = 'fahad@fahadqa.com';
+$fromName  = 'مركز فهد القرني';
 
 // Helper to sanitize
 function s($v){ return htmlspecialchars(trim($v), ENT_QUOTES, 'UTF-8'); }
@@ -52,7 +67,9 @@ if (!empty($_FILES['attachment']) && $_FILES['attachment']['error'] === UPLOAD_E
 $subject = "طلب استشارة - " . s($fullName);
 $boundary = md5(time());
 
-$headers = "From: no-reply@dakirblm@gmail.com\r\n";
+// Build headers for the raw MIME message
+$headers = "From: {$fromName} <{$fromEmail}>\r\n";
+$headers .= "Reply-To: " . s($phone) . " <" . s($phone) . ">\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: multipart/mixed; boundary=\"{$boundary}\"\r\n";
 
@@ -78,7 +95,60 @@ if ($hasAttachment) {
 $body .= "--{$boundary}--\r\n";
 
 // send
-$sent = mail($to, $subject, $body, $headers);
+// Full raw message (headers + body) to send via SMTP or mail()
+$rawMessage = "Date: " . date('r') . "\r\n";
+$rawMessage .= "To: {$to}\r\n";
+$rawMessage .= "Subject: {$subject}\r\n";
+$rawMessage .= $headers . "\r\n";
+$rawMessage .= $body;
+
+// Try SMTP if configured and password provided
+$sent = false;
+if ($SMTP_ENABLED && !empty($SMTP_PASS) && $SMTP_PASS !== 'CHANGE_ME') {
+    // simple SMTP client using STARTTLS + AUTH LOGIN
+    $errno = 0; $errstr = '';
+    $fp = stream_socket_client("tcp://{$SMTP_HOST}:{$SMTP_PORT}", $errno, $errstr, 15);
+    if ($fp) {
+        stream_set_timeout($fp, 15);
+        $res = fgets($fp);
+        // ehlo
+        fwrite($fp, "EHLO localhost\r\n");
+        while ($line = fgets($fp)) { if (substr($line,3,1) != '-') break; }
+        // starttls if requested
+        if (strtolower($SMTP_SECURE) === 'tls') {
+            fwrite($fp, "STARTTLS\r\n");
+            $line = fgets($fp);
+            if (strpos($line, '220') === 0) {
+                stream_socket_enable_crypto($fp, true, STREAM_CRYPTO_METHOD_TLS_CLIENT);
+                // EHLO again after TLS
+                fwrite($fp, "EHLO localhost\r\n");
+                while ($line = fgets($fp)) { if (substr($line,3,1) != '-') break; }
+            }
+        }
+        // auth
+        fwrite($fp, "AUTH LOGIN\r\n");
+        fgets($fp);
+        fwrite($fp, base64_encode($SMTP_USER) . "\r\n");
+        fgets($fp);
+        fwrite($fp, base64_encode($SMTP_PASS) . "\r\n");
+        $authRes = fgets($fp);
+        if (strpos($authRes, '235') === 0) {
+            fwrite($fp, "MAIL FROM:<{$fromEmail}>\r\n"); fgets($fp);
+            fwrite($fp, "RCPT TO:<{$to}>\r\n"); fgets($fp);
+            fwrite($fp, "DATA\r\n"); fgets($fp);
+            fwrite($fp, $rawMessage . "\r\n.\r\n");
+            $dataRes = fgets($fp);
+            if (strpos($dataRes, '250') === 0) $sent = true;
+            fwrite($fp, "QUIT\r\n"); fgets($fp);
+        }
+        fclose($fp);
+    }
+}
+
+// fallback to PHP mail() if SMTP not used or failed
+if (! $sent) {
+    $sent = mail($to, $subject, $body, $headers);
+}
 
 ?><!doctype html>
 <html lang="ar" dir="rtl">
